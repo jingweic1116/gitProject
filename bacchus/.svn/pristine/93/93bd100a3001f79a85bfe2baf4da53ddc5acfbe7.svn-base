@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>依房型訂房 / PMS系統 / 美麗信花園大酒店</title>
+
+		<meta name="description" content="overview &amp; stats" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="../assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="../components/font-awesome/css/font-awesome.css" />
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="../assets/css/ace-fonts.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="../assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="../assets/css/ace-part2.css" class="ace-main-stylesheet" />
+		<![endif]-->
+		<link rel="stylesheet" href="../assets/css/ace-skins.css" />
+		<link rel="stylesheet" href="../assets/css/ace-rtl.css" />
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="../assets/css/ace-ie.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="../assets/css/style.css" />
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="../assets/js/ace-extra.js"></script>
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="../components/html5shiv/dist/html5shiv.min.js"></script>
+		<script src="../components/respond/dest/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body class="no-skin">
+		<!-- #section:basics/navbar.layout -->
+		<div id="navbar" class="navbar navbar-default          ace-save-state navbar-fixed-top">
+
+		</div><!-- /.ace-save-state navbar-fixed-top-->
+		<!-- include header.html -->
+
+		<!-- /section:basics/navbar.layout -->
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<!-- #section:basics/sidebar -->
+			<div id="sidebar"  class="sidebar                  responsive                    ace-save-state sidebar-fixed">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<button class="btn btn-success">
+							<i class="ace-icon fa fa-signal"></i>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-pencil"></i>
+						</button>
+
+						<!-- #section:basics/sidebar.layout.shortcuts -->
+						<button class="btn btn-warning">
+							<i class="ace-icon fa fa-users"></i>
+						</button>
+
+						<button class="btn btn-danger">
+							<i class="ace-icon fa fa-cogs"></i>
+						</button>
+
+						<!-- /section:basics/sidebar.layout.shortcuts -->
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>
+					</div>
+				</div><!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list">
+					<li>
+						<span class="input-icon companyInfo">
+							<input type="text" placeholder="關鍵字查詢" class="nav-search-input"  autocomplete="off" style="padding: 5px 0 6px 5px; margin-bottom: 1px;" />
+						</span>
+						<i class="ace-icon fa fa-search nav-search-icon"></i>
+					</li>
+					<li class="active">
+						<a href="#">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> PMS管理 </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-desktop"></i>
+							<span class="menu-text">
+								訂房作業
+							</span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<!--<a href="indexMain.html" target="_blank" class="dropdown-toggle"> dropdown-toggle 在下拉一層-->
+								<a href="reservation-query.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+
+									訂房查詢
+									<!--<b class="arrow fa fa-angle-down"></b>-->
+								</a>
+
+								<b class="arrow"></b>
+
+								<!--<ul class="submenu">-->
+									<!--<li class="">-->
+										<!--<a href="top-menu.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Top Menu-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+
+									<!--<li class="">-->
+										<!--<a href="two-menu-1.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Two Menus 1-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+
+									<!--<li class="">-->
+										<!--<a href="two-menu-2.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Two Menus 2-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+
+									<!--<li class="">-->
+										<!--<a href="mobile-menu-1.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Default Mobile Menu-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+
+									<!--<li class="">-->
+										<!--<a href="mobile-menu-2.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Mobile Menu 2-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+
+									<!--<li class="">-->
+										<!--<a href="mobile-menu-3.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Mobile Menu 3-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+								<!--</ul>-->
+							</li>
+
+							<li class="">
+								<a href="reservationRateCode.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									專案訂房
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+
+						</ul>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-list"></i>
+							<span class="menu-text"> 訂房其他作業 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="blockSetting.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									鎖控設定
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="index-overBooking.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									超訂設定
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="inhouseQuery.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									住客資料維護
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									住客查詢
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="hotelRentalItems.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									櫃台備品庫存查詢
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+						</ul>
+					</li>
+
+
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-pencil-square-o"></i>
+							<span class="menu-text"> 訂房報告-預估分析 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依類別)
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依月份)
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依房種)
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依參數)
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房數量異動折線圖
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									預期訂房報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房取消及候補報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房確認數統計表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房銷售分析報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									房間銷售狀況預估報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									房間銷售狀況預估年報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									房種空房數月報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									業務員未來訂房報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									業務員未來訂房產能比較表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									簽約公司未來訂房報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依類別)-房間大類
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依房種)-房間大類
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									房間銷售狀況預估年表-房間大類
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-pencil-square-o"></i>
+							<span class="menu-text"> 訂房報表-實際分析 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									當日新增訂房報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									當日取消訂房報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									NO-SHOW報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									旅客來源統計表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									國籍分析統計表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Rate Code統計表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Rate Code 產值統計表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									年齡層報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									旅客性別報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									旅客停留天數分析表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房與入住差異天數報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Market Segment 分析報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房取消原因統計表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									鎖控明細報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									房價設定一覽表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+														<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									在店房間數量表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+														<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂金催收報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+														<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房狀態報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+														<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房確認書
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+														<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Change Log
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+
+				</ul><!-- /.nav-list -->
+
+				<!-- #section:basics/sidebar.layout.minimize -->
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+				<div class="companyInfo">
+					<img src="../assets/images/athena.png" />
+				</div>
+				<!-- /section:basics/sidebar.layout.minimize -->
+			</div>
+
+			<!-- /section:basics/sidebar -->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<!-- #section:basics/content.top-sec-ul -->
+					<div class="row top-sec-ul breadcrumbs-fixed"  style="background: #F5F5F5;">
+						<div class="col-xs-12">
+							<div class="top-ul">
+								<ul>
+									<a href="indexMain.html" class="active-01"><li> 訂房 </li></a>
+									<a href="reception.html"><li>接待</li></a>
+									<a href="cashier.html "><li>出納</li></a>
+									<a href="houseKeeping.html"><li>房務</li></a>
+									<a href="night.html"><li>夜稽</li></a>
+									<a href="business.html"><li>業務</li></a>
+									<a href="report.html"><li>報表</li></a>
+									<a href="setting.html"><li>設定</li></a>
+									<a href="customMenus.html"><li>自訂</li></a>
+								</ul>
+							</div> <!-- /.top-ul -->
+							<div class="secondMenu-ul">
+								<ul>
+									<a href="indexMain.html"  class="active-01"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>依房型訂房</li></a>
+									<a href="index-RoomNum.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>依房號訂房</li></a>
+									<a href="index-checkIn.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>CI清單</li></a>
+									<a href="index-checkOut.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>CO清單</li></a>
+									<a href="int_Counter.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>綜合櫃台</li></a>
+									<a href="groupList.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>團體清單</li></a>
+									<a href="guest_inquiry.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>住客查詢</li></a>
+									<a href="townHouse.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>排房作業</li></a>
+									<a href="assignList.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>交辦事項</li></a>
+								</ul>
+							</div> <!-- /.secondMenu-ul -->
+
+						</div><!-- /.col -->
+					</div><!-- /.row -->
+					<!--<div class="secondMenu-ul secondMenu-ul-fixed" style="position: fixed;top:100px; right: 0; left: 200px;  z-index: 1024;">-->
+					<div class="page-content">
+						<div class="page-header">
+
+						</div><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-xs-12 col-sm-11">
+										<div class="row">
+											<a href="#">
+												<img src="../assets/images/indexMain02.jpg" style="width: 100%; height: auto;" />
+											</a>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-1">
+										<div class="row">
+											<div class="right-menu-co">
+												<ul>
+													<!--<li class="icon-co-01">-->
+													<li>
+														<!--<img src="../assets/images/icon/14.png" />-->
+														<a href="reservation-01.html">
+															<div class="icon-co-14"></div>
+														</a>
+														<span>訂房</span>
+
+													</li>
+													<li>
+														<div class="icon-co-10"></div>
+														<span>列印</span>
+													</li>
+													<li>
+														<div class="icon-co-03"></div>
+														<span>另存</span>
+													</li>
+													<li>
+														<div class="icon-co-14"></div>
+														<span>上一頁</span>
+													</li>
+													<li>
+														<div class="icon-co-14"></div>
+														<span>下一頁</span>
+													</li>
+													<li>
+														<a href="reservationRateCode.html">
+															<div class="icon-co-14"></div>
+														</a>
+														<span>專案訂房</span>
+													</li>
+
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+
+			<div class="footer">
+				<div class="footer-inner">
+					<!-- #section:basics/footer -->
+					<div class="footer-content   footer-color">
+						<span class="bigger-120">
+
+							Athena Information Systems
+						</span>
+
+					</div>
+
+					<!-- /section:basics/footer -->
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script src="../components/jquery/dist/jquery.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="../components/jquery.1x/dist/jquery.js"></script>
+<![endif]-->
+		<!--myself affects 自己加的效果-->
+		<script src="../assets/js/site.js"></script>
+		<script src="../assets/js/include.js"></script>
+
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='../components/_mod/jquery.mobile.custom/jquery.mobile.custom.js'>"+"<"+"/script>");
+		</script>
+		<script src="../components/bootstrap/dist/js/bootstrap.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+
+
+		<!-- ace scripts -->
+		<script src="../assets/js/src/elements.scroller.js"></script>
+		<script src="../assets/js/src/elements.colorpicker.js"></script>
+		<script src="../assets/js/src/elements.fileinput.js"></script>
+		<script src="../assets/js/src/elements.typeahead.js"></script>
+		<script src="../assets/js/src/elements.wysiwyg.js"></script>
+		<script src="../assets/js/src/elements.spinner.js"></script>
+		<script src="../assets/js/src/elements.treeview.js"></script>
+		<script src="../assets/js/src/elements.wizard.js"></script>
+		<script src="../assets/js/src/elements.aside.js"></script>
+		<script src="../assets/js/src/ace.js"></script>
+		<script src="../assets/js/src/ace.basics.js"></script>
+		<script src="../assets/js/src/ace.scrolltop.js"></script>
+		<script src="../assets/js/src/ace.ajax-content.js"></script>
+		<script src="../assets/js/src/ace.touch-drag.js"></script>
+		<script src="../assets/js/src/ace.sidebar.js"></script>
+		<script src="../assets/js/src/ace.sidebar-scroll-1.js"></script>
+		<script src="../assets/js/src/ace.submenu-hover.js"></script>
+		<script src="../assets/js/src/ace.widget-box.js"></script>
+		<script src="../assets/js/src/ace.settings.js"></script>
+		<script src="../assets/js/src/ace.settings-rtl.js"></script>
+		<script src="../assets/js/src/ace.settings-skin.js"></script>
+		<script src="../assets/js/src/ace.widget-on-reload.js"></script>
+		<script src="../assets/js/src/ace.searchbox-autocomplete.js"></script>
+
+		<!-- inline scripts related to this page -->
+
+
+		<!-- the following scripts are used in demo only for onpage help and you don't need them -->
+		<link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
+		<link rel="stylesheet" href="../docs/assets/js/themes/sunburst.css" />
+
+		<script type="text/javascript"> ace.vars['base'] = '..'; </script>
+		<script src="../assets/js/src/elements.onpage-help.js"></script>
+		<script src="../assets/js/src/ace.onpage-help.js"></script>
+		<script src="../docs/assets/js/rainbow.js"></script>
+		<script src="../docs/assets/js/language/generic.js"></script>
+		<script src="../docs/assets/js/language/html.js"></script>
+		<script src="../docs/assets/js/language/css.js"></script>
+		<script src="../docs/assets/js/language/javascript.js"></script>
+
+
+	</body>
+</html>

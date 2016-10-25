@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8" />
+	<title>美麗信花園大酒店</title>
+
+	<!--Jquery -->
+	<script src="components/jquery/dist/jquery.js"></script>
+	<script src="components/jquery-ui-1.12.0-rc.2/jquery-ui.js"></script>
+	<link rel="stylesheet" href="components/jquery-ui-1.12.0-rc.2/jquery-ui.css"/>
+
+
+
+	<!-- bootstrap & fontawesome -->
+	<link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="components/font-awesome/css/font-awesome.css" />
+	<script src="components/bootstrap/dist/js/bootstrap.js"></script>
+
+
+	<!--CSS -->
+	<link rel="stylesheet" href="css/ace/css/ace_bacchus.css"></script>
+	<link rel="stylesheet" href="css/bacchus.css"></script>
+
+
+</head>
+
+	<body>
+	    <div id="reservationDialog">
+	    	<div class="col-sm-11 col-md-11 col-lg-11 noPadding">
+	    		<div class="col-sm-12 col-md-12 col-lg-12 noPadding marginBottom">
+					<ul class="nav nav-tabs padding-12 tab-color-blue background-blue" id="doRemarktabs">
+						<li >
+							<a data-toggle="tab" href="#basicinfo">基本資料</a>
+						</li>
+
+						<li >
+							<a data-toggle="tab" href="#nlc_info">來館資料</a>
+						</li>
+
+						<li class="active">
+							<a data-toggle="tab" href="#doRemark">館別備註</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<div id="basicinfo" class="tab-pane">
+							<p>目前無資料</p>
+						</div>
+
+						<div id="nlc_info" class="tab-pane ">
+							<div></div>
+							<div class="form-widget-table">
+								<table class="table_bascchus">
+									<thead>
+										<tr>
+											<th width="8%">訂房卡狀態</th>
+											<th width="12%">C/I日期</th>
+											<th width="12%">C/O日期</th>
+											<th width="8%">Full Name</th>
+											<th width="8%">確認狀態</th>
+											<th width="10%">公司名稱</th>
+											<th width="10%">代訂公司名稱</th>
+											<th width="10%">保留日</th>
+											<th width="8%">聯絡人</th>
+											<th width="8%">房種</th>
+											<th width="6%">大人</th>
+										</tr>
+										<tr>
+											<td>正常</td>
+											<td>
+											<select class="form-control">
+											<option>2016/5/28</option>
+											</select>
+											</td>
+											<td>
+											<select class="form-control">
+											<option>2016/5/28</option>
+											</select>
+											</td>
+											<td>
+											<input class="width90 form-control" type="" name="">
+											</td>
+											<td>
+												<input class="width90 form-control" type="" name="" placeholder="已確認" >
+											</td>
+											<td>
+												<input class="width90 form-control" type="" name="">		
+											</td>
+											<td>
+												<input class="width90 form-control" type="" name="">
+											</td>
+											<td>
+												<input class="width90 form-control date-picker" id="datepicker"type="" name="">
+											</td>
+											<td>
+												<input class="width90 form-control" type="" name="">
+											</td>
+											<td>
+												<input class="width90 form-control" type="" name="">
+											</td>
+											<td>
+												<input class="width90 form-control" type="" name="">
+											</td>								
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+
+						<div id="doRemark" class="tab-pane in active">
+							<div class="form-widget-table">
+				    		<table class="table_bascchus">
+				    			<thead>
+				    				<tr>
+				    					<th width="10%">館別</th>
+				    					<th width="5%">序號</th>
+				    					<th width="10%">結帳日期</th>
+				    					<th width="30%">備註</th>
+				    					<th width="10%">輸入者</th>
+				    					<th width="15%">輸入日</th>
+				    					<th width="10%">最後異動者</th>
+				    					<th width="15%">最後異動日</th>
+				    				</tr>
+				    				<tr>
+				    					<td>
+				    					<input class="width80 form-control" type="" name="">
+				    					</td>
+				    					<td>1</td>
+				    					<td>
+				    					<select class="form-control"><option>2016/12/28</option></select>
+				    					</td>
+				    					<td>
+				    					<input class="width90 form-control" type="" name="">
+				    					</td>
+				    					<td>
+				    					<input class="width80 form-control" type="" name="">
+				    					</td>
+				    					<td>
+				    					<input class="form-control date-picker" id="#date-picker" type="text" />
+				    					</td>
+				    					<td>
+				    					<input class="width80 form-control" type="" name="">
+				    					</td>
+				    					<td>
+				    					<input class="width100 form-control date-picker" id="#date-picker2" type="text">
+				    					</td>
+				    				</tr>
+				    			</thead>
+				    		</table>
+					    	</div>
+						</div>
+					</div>
+    			</div>
+			</div>
+	    	
+	    	
+	    	<div class="col-sm-1 col-md-1 col-lg-1 noPaddingRight" >
+	    		<div class="right-menu-co">
+					<ul>
+						<li>
+							<a>
+							<div class="right-menu-co-icon">
+							<i class="fa fa-floppy-o aria-hidden="true"></i>
+							</div>
+							</a>
+							<span>新增訂房卡</span>
+						</li>
+						<li>
+							<a>
+							<div class="right-menu-co-icon">
+							<i class="fa fa-floppy-o aria-hidden="true"></i>
+							</div>
+							</a>
+							<span>新增</span>
+						</li>
+						<li>
+							<a>
+							<div class="right-menu-co-icon">
+							<i class="fa fa-floppy-o aria-hidden="true"></i>
+							</div>
+							</a>
+							<span>存檔</span>
+						</li>
+						<li>
+							<a>
+							<div class="right-menu-co-icon">
+							<i class="fa fa-floppy-o aria-hidden="true"></i>
+							</div>
+							</a>
+							<span>選項</span>
+						</li>
+						<li>
+							<a>
+							<div class="right-menu-co-icon">
+							<i class="fa fa-floppy-o aria-hidden="true"></i>
+							</div>
+							</a>
+							<span>離開</span>
+						</li>
+					</ul>
+				</div>
+	    	</div>
+	    </div>
+
+
+	    <!-- Reseavation Javascript -->
+	    <script type="text/javascript">
+	        $("#reservationDialog").dialog({
+	         title: "住客歷史維護",
+	         width: 1024,
+	         maxwidth: 1920,
+	         autoOpen: true,
+	         dialogClass: "test",
+	         modal: true,
+	         responsive: true
+	        });
+
+	        $('.date-picker').datepicker({
+					autoclose: true,
+					todayHighlight: true
+				})
+	    </script>
+	</body>
+</html>

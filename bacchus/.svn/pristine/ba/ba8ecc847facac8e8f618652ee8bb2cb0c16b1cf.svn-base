@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/* line 1, ../sass/style.sass */
+body {
+  font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 1, ../sass/_right-menu.sass */
+.right-menu-co {
+  border: 1px solid #888;
+  text-align: center;
+}
+/* line 4, ../sass/_right-menu.sass */
+.right-menu-co ul {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+/* line 7, ../sass/_right-menu.sass */
+.right-menu-co ul li {
+  list-style: none;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+/* line 14, ../sass/_right-menu.sass */
+.right-menu-co ul li img {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+}
+
+/* line 29, ../sass/_right-menu.sass */
+.icon-co-03 {
+  background: url("../images/icon/03.png");
+  repeat: no-repeat;
+  background-size: 48px 48px;
+}
+/* line 24, ../sass/_right-menu.sass */
+.icon-co-03:hover {
+  background: url("../images/icon/03-1.png");
+  repeat: no-repeat;
+  background-size: 48px 48px;
+}
+
+/* line 31, ../sass/_right-menu.sass */
+.icon-co-10 {
+  background: url("../images/icon/10.png");
+  repeat: no-repeat;
+  background-size: 48px 48px;
+}
+/* line 24, ../sass/_right-menu.sass */
+.icon-co-10:hover {
+  background: url("../images/icon/10-1.png");
+  repeat: no-repeat;
+  background-size: 48px 48px;
+}
+
+/* line 33, ../sass/_right-menu.sass */
+.icon-co-14 {
+  background: url("../images/icon/14.png");
+  repeat: no-repeat;
+  background-size: 48px 48px;
+}
+/* line 24, ../sass/_right-menu.sass */
+.icon-co-14:hover {
+  background: url("../images/icon/14-1.png");
+  repeat: no-repeat;
+  background-size: 48px 48px;
+}
+
+/* line 1, ../sass/_edit-default.sass */
+.page-header {
+  padding-bottom: 0;
+}
+
+/* line 3, ../sass/_edit-default.sass */
+h3 {
+  font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 5, ../sass/_edit-default.sass */
+.modal-body {
+  text-align: center;
+  margin: 20px auto;
+}
+
+/*-------- login.html -------- */
+/* line 6, ../sass/style.sass */
+.login-img {
+  margin: 30px 0 0 0;
+}
+/* line 8, ../sass/style.sass */
+.login-img img {
+  width: 375px;
+  height: auto;
+}
+
+/* line 11, ../sass/style.sass */
+.login-img-footer {
+  margin: 30px 0 20px 0;
+}
+/* line 13, ../sass/style.sass */
+.login-img-footer img {
+  width: 200px;
+  height: auto;
+}
+
+/* line 16, ../sass/style.sass */
+.lang {
+  margin: 20px 20px 0 0;
+}
+
+/* line 20, ../sass/style.sass */
+.v_codes img {
+  text-align: center;
+}
+
+/* line 22, ../sass/style.sass */
+.errorTip {
+  color: #ff0000;
+}
+
+/* line 25, ../sass/style.sass */
+.light-login {
+  background: #DFE0E2 url("images/bk_miramar.jpg") no-repeat;
+  background-size: 100% auto;
+}
+
+/* line 29, ../sass/style.sass */
+select.form-control {
+  padding: 4px 2px;
+}
+
+/* line 31, ../sass/style.sass */
+.select-color, select {
+  color: #CBC0C0;
+}
+
+/*-- 下拉式選擇不同館別 -- */
+/* line 34, ../sass/style.sass */
+.header-other-choice {
+  margin: 0 10px 0 0;
+}
+
+/*-------- optionSystem.html -------- */
+/* line 37, ../sass/style.sass */
+.brand-txt {
+  color: #eea033;
+  font-weight: bold;
+}
+
+/*-- 圖片 hover 文字 -- */
+/* line 41, ../sass/style.sass */
+.system-block-all {
+  margin: 50px 0 0 0;
+}
+
+/* line 43, ../sass/style.sass */
+.system-block {
+  margin: 0 0 0 30px;
+  display: inline-block;
+}
+
+/* line 46, ../sass/style.sass */
+.imgWrap {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+/* line 50, ../sass/style.sass */
+.imgWrap span.text-content {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  border-radius: 150px;
+  opacity: 0;
+}
+/* line 62, ../sass/style.sass */
+.imgWrap span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 66, ../sass/style.sass */
+.imgWrap:hover .text-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*-- /. 圖片 hover 文字 -- */
+/* line 71, ../sass/style.sass */
+.opSystem-footer {
+  padding-top: 220px;
+}
+
+/* line 73, ../sass/style.sass */
+.footer-color {
+  background: #c1e7fe;
+}
+
+/* line 75, ../sass/style.sass */
+.footer .footer-inner .footer-content {
+  padding: 0;
+}
+
+/* line 80, ../sass/style.sass */
+.footer-ul ul li, .top-ul ul li, .secondMenu-ul ul li {
+  display: inline-block;
+  list-style: none;
+  line-height: 30px;
+}
+
+/* line 85, ../sass/style.sass */
+.top-ul ul {
+  margin-left: 0 !important;
+  margin-bottom: 15px !important;
+}
+/* line 88, ../sass/style.sass */
+.top-ul ul a {
+  font-size: 16px;
+  background: #ffbb22;
+  padding: 5px 4%;
+  margin: 3px 0;
+  color: #fff;
+}
+/* line 94, ../sass/style.sass */
+.top-ul ul a:hover {
+  background: #ffc666;
+}
+/* line 96, ../sass/style.sass */
+.top-ul ul a.active-01 {
+  background: #D15B47;
+}
+
+/* line 99, ../sass/style.sass */
+.secondMenu-ul ul {
+  margin-left: 0 !important;
+  margin-bottom: 15px !important;
+}
+/* line 102, ../sass/style.sass */
+.secondMenu-ul ul a {
+  padding: 5px 2%;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+  color: #555;
+}
+/* line 107, ../sass/style.sass */
+.secondMenu-ul ul a:hover {
+  background: #c6c6c6;
+  color: #fff;
+}
+/* line 110, ../sass/style.sass */
+.secondMenu-ul ul a.active-01 {
+  background: #888;
+  color: #fff;
+}
+/* line 113, ../sass/style.sass */
+.secondMenu-ul .icon-2-style {
+  width: 12px;
+  height: 12px;
+  margin: 0 10px 3px 0;
+}
+
+/* line 118, ../sass/style.sass */
+.copyright {
+  margin: -15px 0 0 0;
+}
+
+/* line 120, ../sass/style.sass */
+.companyInfo {
+  margin: 10px 0 0 7px;
+}
+
+/*-- indexMain.html -- */
+/* line 124, ../sass/style.sass */
+.nav-header-inline {
+  float: left;
+}
+
+/* line 127, ../sass/style.sass */
+.breadcrumbs {
+  color: #fff;
+  background-color: #438EB9;
+  border-bottom: none;
+}
+
+/* line 131, ../sass/style.sass */
+.breadcrumb {
+  margin: 12px 12px 0 12px;
+}
+
+/* line 133, ../sass/style.sass */
+.breadcrumb > li > a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* line 136, ../sass/style.sass */
+.breadcrumb > li, .breadcrumb > li.active {
+  color: #e5e5e5;
+}
+
+/*-- index-checkOut.html --> */
+/* line 140, ../sass/style.sass */
+.search-co {
+  position: relative;
+  height: auto;
+  border: 1px solid #0063ae;
+  padding: 0 0 20px 0;
+}
+/* line 145, ../sass/style.sass */
+.search-co .search-co-h {
+  font-size: 16px;
+  background: #c0d6ee;
+  padding: 0 0 0 10px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #0063ae;
+}
+/* line 152, ../sass/style.sass */
+.search-co .search-co-h span {
+  margin: 0 0 0 5px;
+}
+/* line 154, ../sass/style.sass */
+.search-co .search-co-content {
+  text-align: center;
+  text-align: left;
+  border-collapse: collapse;
+}
+/* line 161, ../sass/style.sass */
+.search-co .search-co-content .block-table {
+  margin: 10px 0;
+}
+/* line 166, ../sass/style.sass */
+.search-co .search-co-content .block-table label {
+  margin: 0 5px 0 0;
+  text-align: right;
+  width: 90px;
+  font-size: 13px;
+}
+/* line 172, ../sass/style.sass */
+.search-co .search-co-content .block-table input {
+  width: 50%;
+}
+/* line 176, ../sass/style.sass */
+.search-co .search-co-btn {
+  background: #555;
+  border: none;
+  color: #fff;
+  padding: 5px 20px;
+}
+/* line 181, ../sass/style.sass */
+.search-co .search-co-btn:hover {
+  background: #9b9b9b;
+}
+
+/* line 184, ../sass/style.sass */
+.co-table {
+  width: 100%;
+  text-align: center;
+}
+/* line 187, ../sass/style.sass */
+.co-table table {
+  width: 100%;
+  border: 1px solid #ededed;
+}
+/* line 190, ../sass/style.sass */
+.co-table table th, .co-table table td {
+  padding: 5px 0;
+}
+/* line 192, ../sass/style.sass */
+.co-table table thead {
+  background: #c0d6ee;
+}
+/* line 194, ../sass/style.sass */
+.co-table table thead th {
+  text-align: center;
+}
+/* line 197, ../sass/style.sass */
+.co-table table tbody tr {
+  border-bottom: 1px solid #ededed;
+}
+
+/* line 200, ../sass/style.sass */
+.btn-co-next {
+  margin: 0 0 0 5px;
+}
+
+/* line 202, ../sass/style.sass */
+.modal-dialog-fullScreen {
+  width: 98%;
+  min-height: 400px;
+  max-height: 100%;
+  overflow: auto;
+}
+
+/*-- psd page -- */
+/* line 208, ../sass/style.sass */
+.psd_page {
+  width: 1280px;
+  height: auto;
+  margin: 0 auto;
+}

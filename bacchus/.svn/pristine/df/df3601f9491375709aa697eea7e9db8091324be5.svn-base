@@ -1,0 +1,4129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>綜合櫃台 / PMS系統 / 美麗信花園大酒店</title>
+
+		<meta name="description" content="overview &amp; stats" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="../assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="../components/font-awesome/css/font-awesome.css" />
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="../assets/css/ace-fonts.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="../assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="../assets/css/ace-part2.css" class="ace-main-stylesheet" />
+		<![endif]-->
+		<link rel="stylesheet" href="../assets/css/ace-skins.css" />
+		<link rel="stylesheet" href="../assets/css/ace-rtl.css" />
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="../assets/css/ace-ie.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="../assets/css/style.css" />
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="../assets/js/ace-extra.js"></script>
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="../components/html5shiv/dist/html5shiv.min.js"></script>
+		<script src="../components/respond/dest/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body class="no-skin">
+		<!-- #section:basics/navbar.layout -->
+		<div id="navbar" class="navbar navbar-default          ace-save-state navbar-fixed-top">
+
+		</div><!-- /.ace-save-state navbar-fixed-top-->
+		<!-- include header.html -->
+
+		<!-- /section:basics/navbar.layout -->
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<!-- #section:basics/sidebar -->
+			<div id="sidebar"  class="sidebar                  responsive                    ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<button class="btn btn-success">
+							<i class="ace-icon fa fa-signal"></i>
+						</button>
+
+						<button class="btn btn-info">
+							<i class="ace-icon fa fa-pencil"></i>
+						</button>
+
+						<!-- #section:basics/sidebar.layout.shortcuts -->
+						<button class="btn btn-warning">
+							<i class="ace-icon fa fa-users"></i>
+						</button>
+
+						<button class="btn btn-danger">
+							<i class="ace-icon fa fa-cogs"></i>
+						</button>
+
+						<!-- /section:basics/sidebar.layout.shortcuts -->
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>
+					</div>
+				</div><!-- /.sidebar-shortcuts -->
+
+				<ul class="nav nav-list">
+					<li>
+						<span class="input-icon companyInfo">
+							<input type="text" placeholder="關鍵字查詢" class="nav-search-input"  autocomplete="off" style="padding: 5px 0 6px 5px; margin-bottom: 1px;" />
+						</span>
+						<i class="ace-icon fa fa-search nav-search-icon"></i>
+					</li>
+					<li class="active">
+						<a href="#">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> PMS管理 </span>
+						</a>
+
+						<b class="arrow"></b>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-desktop"></i>
+							<span class="menu-text">
+								訂房作業
+							</span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<!--<a href="indexMain.html" target="_blank" class="dropdown-toggle"> dropdown-toggle 在下拉一層-->
+								<a href="index-RoomNum.html" target="_blank">
+									<i class="menu-icon fa fa-caret-right"></i>
+
+									訂房查詢
+									<!--<b class="arrow fa fa-angle-down"></b>-->
+								</a>
+
+								<b class="arrow"></b>
+
+								<!--<ul class="submenu">-->
+									<!--<li class="">-->
+										<!--<a href="top-menu.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Top Menu-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+
+									<!--<li class="">-->
+										<!--<a href="two-menu-1.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Two Menus 1-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+
+									<!--<li class="">-->
+										<!--<a href="two-menu-2.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Two Menus 2-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+
+									<!--<li class="">-->
+										<!--<a href="mobile-menu-1.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Default Mobile Menu-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+
+									<!--<li class="">-->
+										<!--<a href="mobile-menu-2.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Mobile Menu 2-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+
+									<!--<li class="">-->
+										<!--<a href="mobile-menu-3.html">-->
+											<!--<i class="menu-icon fa fa-caret-right"></i>-->
+											<!--Mobile Menu 3-->
+										<!--</a>-->
+
+										<!--<b class="arrow"></b>-->
+									<!--</li>-->
+								<!--</ul>-->
+							</li>
+
+							<li class="">
+								<a href="reservationRateCode.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									專案訂房
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+
+						</ul>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-list"></i>
+							<span class="menu-text"> 訂房其他作業 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									鎖控設定
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									超訂設定
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									住客資料維護
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									住客重複名單與合併
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									住客查詢
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+						</ul>
+					</li>
+
+
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-pencil-square-o"></i>
+							<span class="menu-text"> 訂房報告-預估分析 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依類別)
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依月份)
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依房種)
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依參數)
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房數量異動折線圖
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									預期訂房報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房取消及候補報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房確認數統計表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房銷售分析報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									房間銷售狀況預估報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									房間銷售狀況預估年報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									房種空房數月報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									業務員未來訂房報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									業務員未來訂房產能比較表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									簽約公司未來訂房報表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依類別)-房間大類
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									訂房預估報表(依房種)-房間大類
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									房間銷售狀況預估年表-房間大類
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-pencil-square-o"></i>
+							<span class="menu-text"> 訂房報表-實際分析 </span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="index-RoomNum.html" target="_blank">
+									<i class="menu-icon fa fa-caret-right"></i>
+
+									一般訂房
+									<!--<b class="arrow fa fa-angle-down"></b>-->
+								</a>
+
+								<b class="arrow"></b>
+
+								<!--<ul class="submenu">-->
+								<!--<li class="">-->
+								<!--<a href="top-menu.html">-->
+								<!--<i class="menu-icon fa fa-caret-right"></i>-->
+								<!--Top Menu-->
+								<!--</a>-->
+
+								<!--<b class="arrow"></b>-->
+								<!--</li>-->
+
+								<!--<li class="">-->
+								<!--<a href="two-menu-1.html">-->
+								<!--<i class="menu-icon fa fa-caret-right"></i>-->
+								<!--Two Menus 1-->
+								<!--</a>-->
+
+								<!--<b class="arrow"></b>-->
+								<!--</li>-->
+
+								<!--<li class="">-->
+								<!--<a href="two-menu-2.html">-->
+								<!--<i class="menu-icon fa fa-caret-right"></i>-->
+								<!--Two Menus 2-->
+								<!--</a>-->
+
+								<!--<b class="arrow"></b>-->
+								<!--</li>-->
+
+								<!--<li class="">-->
+								<!--<a href="mobile-menu-1.html">-->
+								<!--<i class="menu-icon fa fa-caret-right"></i>-->
+								<!--Default Mobile Menu-->
+								<!--</a>-->
+
+								<!--<b class="arrow"></b>-->
+								<!--</li>-->
+
+								<!--<li class="">-->
+								<!--<a href="mobile-menu-2.html">-->
+								<!--<i class="menu-icon fa fa-caret-right"></i>-->
+								<!--Mobile Menu 2-->
+								<!--</a>-->
+
+								<!--<b class="arrow"></b>-->
+								<!--</li>-->
+
+								<!--<li class="">-->
+								<!--<a href="mobile-menu-3.html">-->
+								<!--<i class="menu-icon fa fa-caret-right"></i>-->
+								<!--Mobile Menu 3-->
+								<!--</a>-->
+
+								<!--<b class="arrow"></b>-->
+								<!--</li>-->
+								<!--</ul>-->
+							</li>
+
+							<li class="">
+								<a href="#">
+									<i class="menu-icon fa fa-caret-right"></i>
+									專案訂房
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+
+						</ul>
+					</li>
+
+				</ul><!-- /.nav-list -->
+
+				<!-- #section:basics/sidebar.layout.minimize -->
+				<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+					<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+				</div>
+				<div class="companyInfo">
+					<img src="../assets/images/athena.png" />
+				</div>
+				<!-- /section:basics/sidebar.layout.minimize -->
+			</div>
+
+			<!-- /section:basics/sidebar -->
+			<div class="main-content">
+
+				<div class="main-content-inner">
+
+					<!-- #section:basics/content.top-sec-ul -->
+					<div class="col-xs-12 top-sec-ul breadcrumbs-fixed" style="">
+						<!--<div class="top-ul" style="position: fixed; right: 0; left: 200px; top: auto; z-index: 1024;">-->
+						<div class="top-ul">
+							<ul>
+								<a href="indexMain.html" class="active-01">
+									<li> 訂房</li>
+								</a>
+								<a href="reception.html">
+									<li>接待</li>
+								</a>
+								<a href="cashier.html">
+									<li>出納</li>
+								</a>
+								<a href="houseKeeping.html">
+									<li>房務</li>
+								</a>
+								<a href="night.html">
+									<li>夜稽</li>
+								</a>
+								<a href="business.html">
+									<li>業務</li>
+								</a>
+								<a href="report.html">
+									<li>報表</li>
+								</a>
+								<a href="setting.html">
+									<li>設定</li>
+								</a>
+								<a href="customMenus.html">
+									<li>自訂</li>
+								</a>
+							</ul>
+						</div>
+						<!-- /.top-ul -->
+						<!--<div class="secondMenu-ul secondMenu-ul-fixed" style="position: fixed;top:100px; right: 0; left: 200px;  z-index: 1024;">-->
+
+						<div class="secondMenu-ul">
+							<ul>
+								<a href="indexMain.html">
+									<li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>依房型訂房</li>
+								</a>
+								<a href="index-RoomNum.html">
+									<li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>依房號訂房</li>
+								</a>
+								<a href="index-checkIn.html">
+									<li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>CI清單</li>
+								</a>
+								<a href="index-checkOut.html">
+									<li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>CO清單</li>
+								</a>
+								<a href="int_Counter.html" class="active-01">
+									<li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>綜合櫃台</li>
+								</a>
+								<a href="groupList.html">
+									<li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>團體清單</li>
+								</a>
+								<a href="guest_inquiry.html">
+									<li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>住客查詢</li>
+								</a>
+								<a href="townHouse.html">
+									<li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>排房作業</li>
+								</a>
+								<a href="assignList.html">
+									<li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>交辦事項</li>
+								</a>
+							</ul>
+						</div>
+						<!-- /.secondMenu-ul -->
+
+					</div>
+					<div class="page-content">
+						<div class="page-header">
+
+						</div><!-- /.page-header -->
+
+<!--搜尋列-->
+						<div class="col-xs-12">
+							<div class="row">
+
+								<div class="col-xs-12">
+									<div class="row search-content">
+
+										<div class="search-co">
+											<div class="search-co-h">
+												<i class="ace-icon fa fa-search search-icon"></i>
+												<span>搜尋</span>
+												<div class="row search-right-btn">
+													<div class="right-btn-menu-co">
+														<ul>
+															<li>
+																<i class="fa fa-angle-down show-search-detail fa-lg"></i>
+															</li>
+														</ul>
+													</div>
+												</div>
+
+											</div>
+											<div class="row">
+												<div class="search-co-content col-xs-12">
+													<div class="col-sm-4">
+														<div class="block-table">
+															<label>房號</label>
+															<input type="text"/>
+														</div>
+													</div>
+													<div class="col-sm-4">
+														<div class="block-table">
+															<label>房狀</label>
+															<input type="text"/>
+														</div>
+													</div>
+													<div class="col-sm-4">
+														<div class="block-table">
+															<label>特色</label>
+															<input type="text"/>
+														</div>
+													</div>
+												</div>
+												<div class="search-co-content col-xs-12 rece-search-detail" style="display: none;">
+													<div class="">
+														<div class="col-sm-4">
+															<div class="block-table">
+																<label>房種</label>
+																<input type="text"/>
+															</div>
+														</div> <!-- /.col-sm-4 -->
+														<div class="col-sm-4">
+															<div class="block-table">
+																<label>Walk</label>
+																<input type="text"/>
+															</div>
+														</div> <!-- /.col-sm-4 -->
+														<div class="col-sm-4">
+															<div class="block-table">
+																<label>住客</label>
+																<input type="text"/>
+															</div>
+														</div> <!-- /.col-sm-4 -->
+													</div>
+												</div>
+											</div> <!-- row-->
+											<div class="row search-footer-btn">
+												<div class="footer-btn-menu-co">
+													<ul>
+														<li>
+															<!-- 寫法02 -->
+															<div class="" data-rel="tooltip" data-placement="bottom" title="查詢"
+																 style="padding: 0 0 5px 0;">
+																<div class="icon-reStyle icon-co-14"></div>
+															</div>
+														</li>
+														<li>
+
+															<div class="" data-rel="tooltip" data-placement="bottom"
+																 title="清除查詢" style="padding: 0 0 5px 0;">
+																<div class="icon-reStyle icon-co-11"></div>
+															</div>
+
+														</li>
+													</ul>
+												</div>  <!-- /.footer-btn-menu-co -->
+											</div> <!-- /.search-footer-btn -->
+
+										</div> <!-- /.search-co -->
+
+									</div> <!-- /.row  search-content-->
+								</div> <!-- /.col-sm-6 -->
+
+
+							</div> <!-- /.row -->
+						</div><!-- /.col-xs-12 -->
+						<!--<div class="row">-->
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-xs-12 col-sm-11">
+									<div class="row">
+										<div class="col-sm-8">
+<!-- 左側圖表上排資訊　-->
+											<div class="select-group">
+												<div class="status-btn">
+													<img src="../assets/images/zoom-out.png" />
+													<img src="../assets/images/unlink.png" />
+													<img src="../assets/images/alarm.png" />
+													<img src="../assets/images/note.png" />
+												</div>
+												<div class="btn-group">
+													<button data-toggle="dropdown"
+															class="btn btn-info btn-white dropdown-toggle"
+															aria-expanded="false">
+														棟別
+														<span class="ace-icon fa fa-angle-down icon-on-right"></span>
+													</button>
+
+													<ul class="dropdown-menu dropdown-info dropdown-menu-right">
+														<li>
+															<a href="#">A棟</a>
+														</li>
+
+														<li>
+															<a href="#">B棟</a>
+														</li>
+
+														<li>
+															<a href="#">C棟</a>
+														</li>
+
+														<!--<li class="divider"></li>-->
+
+														<li>
+															<a href="#">D棟</a>
+														</li>
+													</ul>
+												</div> <!-- /.btn-group -->
+												<div class="status-view">
+													<!--<div>-->
+														<!--<div style="line-height: 30px;">-->
+													<div class="status-tip cb-yellow"><label>OC: </label><span>11</span></div>
+													<div class="status-tip cb-purple"><label>OD: </label><span>5</span></div>
+													<div class="status-tip cb-green"><label>DOC: </label><span>11</span></div>
+													<div class="status-tip cb-pink"><label>DOD: </label><span>5</span></div>
+												<!--</div>-->
+												<!--<div style="line-height: 30px;">-->
+													<div class="status-tip cb-gray"><label>VC: </label><span> 11</span></div>
+													<div class="status-tip cb-brown"><label>VD: </label><span>5</span></div>
+													<div class="status-tip cb-default"><label>S: </label><span>5</span></div>
+													<div class="status-tip cb-grayGreen"><label>OOO: </label><span>5</span></div>
+													<div class="status-tip cb-blueGreen"><label>All: </label><span>11</span></div>
+														<!--</div>-->
+													<!--</div>-->
+												</div>
+
+											</div>
+											<div class="clearfix"></div>
+<!-- 左側圖表內容　-->
+											<div class="tabbable tabs-left counter-tabs">
+												<ul class="nav nav-tabs" id="counter-tabs">
+													<li class="active">
+														<a data-toggle="tab" href="#All">
+															<!--<i class="pink ace-icon fa fa-tachometer bigger-110"></i>-->
+															ALL
+														</a>
+													</li>
+
+													<li>
+														<a data-toggle="tab" href="#1F">
+															<!--<i class="blue ace-icon fa fa-user bigger-110"></i>-->
+															1F
+														</a>
+													</li>
+
+													<li>
+														<a data-toggle="tab" href="#2F">
+															<!--<i class="ace-icon fa fa-rocket"></i>-->
+															2F
+														</a>
+													</li>
+													<li>
+														<a data-toggle="tab" href="#3F">
+															<!--<i class="blue ace-icon fa fa-user bigger-110"></i>-->
+															3F
+														</a>
+													</li>
+
+													<li>
+														<a data-toggle="tab" href="#4F">
+															<!--<i class="ace-icon fa fa-rocket"></i>-->
+															4F
+														</a>
+													</li>
+													<li>
+														<a data-toggle="tab" href="#5F">
+															<!--<i class="blue ace-icon fa fa-user bigger-110"></i>-->
+															5F
+														</a>
+													</li>
+
+													<li>
+														<a data-toggle="tab" href="#6F">
+															<!--<i class="ace-icon fa fa-rocket"></i>-->
+															6F
+														</a>
+													</li>
+													<li>
+														<a data-toggle="tab" href="#7F">
+															<!--<i class="blue ace-icon fa fa-user bigger-110"></i>-->
+															7F
+														</a>
+													</li>
+
+													<li>
+														<a data-toggle="tab" href="#8F">
+															<!--<i class="ace-icon fa fa-rocket"></i>-->
+															8F
+														</a>
+													</li>
+
+													<li>
+														<a data-toggle="tab" href="#9F">
+															<!--<i class="ace-icon fa fa-rocket"></i>-->
+															9F
+														</a>
+													</li>
+													<li>
+														<a data-toggle="tab" href="#10F">
+															<!--<i class="blue ace-icon fa fa-user bigger-110"></i>-->
+															10F
+														</a>
+													</li>
+
+												</ul>
+
+												<div class="tab-content padding-8">
+													<div id="All" class="tab-pane in active">
+														<div class="counterPage">
+															<div class="counterRow">
+																<div class="counterBlock" style="height: 65px;">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,600</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																		<span style="color:#ff0000; font-size: 5px; ">
+																			<span>擾</span>
+																			<span>排</span>
+																			<span>瑕</span>
+																		</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub"  style="margin: 5px 0 0 0;">
+																		<span class="left">木村拓哉,nakamura</span>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock" style="height: 65px;">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,600</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																		<span class="">
+																		<img src="../assets/images/broom.png" style="width: 12px; height: 12px;"/>
+																		<img src="../assets/images/warning.png"  style="width: 12px; height: 12px;"/>
+																		<img src="../assets/images/broken-link.png" style="width: 12px; height: 12px;" />
+
+																		</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">木村拓哉,nakamura</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<!--<div class="foot-right">-->
+																		<!--<img src="../assets/images/broom.png" />-->
+																		<!--<span> | </span>-->
+																		<!--<img src="../assets/images/warning.png" />-->
+																		<!--<span> | </span>-->
+																		<!--<img src="../assets/images/broken-link.png" />-->
+																	<!--</div>-->
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-yellow">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-yellow">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+
+																	<div class="foot-right">
+																		<img src="../assets/images/broom.png" />
+																		<span> | </span>
+																		<img src="../assets/images/warning.png" />
+																		<span> | </span>
+																		<img src="../assets/images/broken-link.png" />
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-grayGreen">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-purple">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock ">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-green">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-pink">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock ">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-gray">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-brown">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-blueGreen">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-grayGreen">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-grayGreen">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot-right">
+																		<img src="../assets/images/broom.png" />
+																		<span> | </span>
+																		<img src="../assets/images/warning.png" />
+																		<span> | </span>
+																		<img src="../assets/images/broken-link.png" />
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-yellow">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-yellow">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-purple">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock ">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-green">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-pink">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock ">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-gray">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-brown">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-blueGreen">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+
+
+															</div>
+														</div>
+													</div>
+
+													<div id="1F" class="tab-pane">
+														<div class="counterPage">
+															<div class="counterRow">
+																<div class="counterBlock cb-yellow">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-yellow">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-purple">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock ">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-green">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-pink">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock ">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-gray">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-brown">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock cb-blueGreen">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">蔡康永</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">201</span>
+																		<span class="right">DxT $133,56</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>04/29-04/30</span>
+
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">國際獅子會第八專區</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<span class="red-tip">
+																			<span>擾</span>
+																			<span>|</span>
+																			<span>排</span>
+																			<span>|</span>
+																			<span>瑕</span>
+																		</span>
+																		<!--<i class="fa fa-newspaper-o fa-lg right top10"></i>-->
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div id="2F" class="tab-pane">
+														<div class="townPage">
+															<div class="townRow">
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock no-show">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock no-show">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock no-show">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock no-show">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock no-show">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock no-show">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+																<div class="counterBlock no-show">
+																	<div class="head">
+																		<span class="left txt-lg">0301</span>
+																		<span class="right">DDT</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content">
+																		<span>科蝌蚪</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="content-sub">
+																		<span class="left">$4500</span>
+																		<span class="right">1人</span>
+																	</div>
+																	<div class="clearfix"></div>
+																	<div class="foot">
+																		<i class="fa fa-newspaper-o fa-lg right top10"></i>
+																	</div>
+																	<div class="clearfix"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div id="3F" class="tab-pane">
+														<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they
+															sold out mcsweeney's organic lomo retro fanny pack lo-fi
+															farm-to-table readymade.</p>
+														<p>Raw denim you probably haven't heard of them jean shorts
+															Austin.</p>
+													</div>
+
+													<div id="4F" class="tab-pane">
+														<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they
+															sold out mcsweeney's organic lomo retro fanny pack lo-fi
+															farm-to-table readymade.</p>
+														<p>Raw denim you probably haven't heard of them jean shorts
+															Austin.</p>
+													</div>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+
+											<!-- /section:elements.tab.position -->
+										</div><!-- /.col col-sm-6-->
+
+										<div class="col-sm-4">
+											<!-- #section:elements.tab -->
+											<div class="tabbable">
+												<ul class="nav nav-tabs" id="myTab">
+													<li class="active">
+														<a data-toggle="tab" href="#default">
+															<!--<i class="green ace-icon fa fa-home bigger-120"></i>-->
+															一般資訊
+														</a>
+													</li>
+
+													<li>
+														<a data-toggle="tab" href="#otherMessages">
+															其他資訊
+															<!--<span class="badge badge-danger">4</span>-->
+														</a>
+													</li>
+
+													<li class="dropdown">
+														<a data-toggle="tab" href="#comeMessages">
+															來館資訊
+														</a>
+													</li>
+												</ul>
+
+												<div class="tab-content counter-right">
+													<div id="default" class="tab-pane fade in active">
+														<div class="col-xs-12 no-padding-left no-padding-right">
+
+															<div class="col-sm-6 no-padding-left no-padding-right">
+																<div class="block-table" style="width: 150px;">
+																	<label>房間狀況</label>
+																	<input type="text" class="input-sm input-small"/>
+																</div>
+																<div class="block-table">
+																	<label>房間狀況</label>
+																	<input type="text" class="input-sm input-small"/>
+																</div>
+															</div>
+
+															<div class="col-sm-6 no-padding-left no-padding-right">
+																<div class="block-table" style="width: 200px;">
+																	<label>房間狀況</label>
+																	<input type="text" class="input-sm input-small"/>
+																</div>
+
+																<div class="block-table">
+																	<label>房間狀況</label>
+																	<input type="text" class="input-sm input-small"/>
+																</div>
+
+																<div class="block-table">
+																	<label>房間狀況</label>
+																	<input type="text" class="input-sm input-small"/>
+																</div>
+															</div>
+
+														</div>
+													</div>
+
+													<div id="otherMessages" class="tab-pane fade">
+														<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
+														<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
+														<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
+														<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
+														<p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
+													</div>
+
+													<div id="comeMessages" class="tab-pane fade">
+														<p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
+													</div>
+
+													<div id="dropdown2" class="tab-pane fade">
+														<p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin.</p>
+													</div>
+												</div>
+											</div>
+
+											<!-- /section:elements.tab -->
+										</div><!-- /.col -->
+
+										<!--<a href="#">-->
+											<!--<img src="../assets/images/int_Counter.png"  style="width: 100%; height: auto;"/>-->
+										<!--</a>-->
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-1">
+									<div class="row">
+										<div class="right-menu-co">
+											<ul>
+												<!--<li class="icon-co-01">-->
+												<li>
+													<!--<img src="../assets/images/icon/14.png" />-->
+													<div class="icon-co-14"></div>
+													<span>訂房</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>住客畫面</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>修改CO日期</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>設定晨呼</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>換房</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>訂餐</span>
+												</li>
+												<li>
+													<div class="icon-co-10"></div>
+													<span>休息</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>設定訂金帳號</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>電話/電視管理</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>旅客帳處理</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>加房</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>設定公帳號</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>接送機</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>預估款</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>清掃房間</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>免費服務項目</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>改房價</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>取消公帳號</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>交辦事項</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>指清掃人員 / 拆併床</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>開班</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>入帳</span>
+												</li>
+												<li>
+													<div class="icon-co-14"></div>
+													<span>房務入帳</span>
+												</li>
+
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--</div>-->
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+
+			<div class="footer">
+				<div class="footer-inner">
+					<!-- #section:basics/footer -->
+					<div class="footer-content   footer-color">
+						<span class="bigger-120">
+
+							Athena Information Systems
+						</span>
+
+					</div>
+
+					<!-- /section:basics/footer -->
+				</div>
+			</div>
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script src="../components/jquery/dist/jquery.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="../components/jquery.1x/dist/jquery.js"></script>
+<![endif]-->
+		<!--myself affects 自己加的效果-->
+		<script src="../assets/js/site.js"></script>
+		<script src="../assets/js/include.js"></script>
+
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='../components/_mod/jquery.mobile.custom/jquery.mobile.custom.js'>"+"<"+"/script>");
+		</script>
+		<script src="../components/bootstrap/dist/js/bootstrap.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+
+
+		<!-- ace scripts -->
+		<script src="../assets/js/src/elements.scroller.js"></script>
+		<script src="../assets/js/src/elements.colorpicker.js"></script>
+		<script src="../assets/js/src/elements.fileinput.js"></script>
+		<script src="../assets/js/src/elements.typeahead.js"></script>
+		<script src="../assets/js/src/elements.wysiwyg.js"></script>
+		<script src="../assets/js/src/elements.spinner.js"></script>
+		<script src="../assets/js/src/elements.treeview.js"></script>
+		<script src="../assets/js/src/elements.wizard.js"></script>
+		<script src="../assets/js/src/elements.aside.js"></script>
+		<script src="../assets/js/src/ace.js"></script>
+		<script src="../assets/js/src/ace.basics.js"></script>
+		<script src="../assets/js/src/ace.scrolltop.js"></script>
+		<script src="../assets/js/src/ace.ajax-content.js"></script>
+		<script src="../assets/js/src/ace.touch-drag.js"></script>
+		<script src="../assets/js/src/ace.sidebar.js"></script>
+		<script src="../assets/js/src/ace.sidebar-scroll-1.js"></script>
+		<script src="../assets/js/src/ace.submenu-hover.js"></script>
+		<script src="../assets/js/src/ace.widget-box.js"></script>
+		<script src="../assets/js/src/ace.settings.js"></script>
+		<script src="../assets/js/src/ace.settings-rtl.js"></script>
+		<script src="../assets/js/src/ace.settings-skin.js"></script>
+		<script src="../assets/js/src/ace.widget-on-reload.js"></script>
+		<script src="../assets/js/src/ace.searchbox-autocomplete.js"></script>
+
+		<!-- inline scripts related to this page -->
+
+
+		<!-- the following scripts are used in demo only for onpage help and you don't need them -->
+		<link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
+		<link rel="stylesheet" href="../docs/assets/js/themes/sunburst.css" />
+
+		<script type="text/javascript"> ace.vars['base'] = '..'; </script>
+		<script src="../assets/js/src/elements.onpage-help.js"></script>
+		<script src="../assets/js/src/ace.onpage-help.js"></script>
+		<script src="../docs/assets/js/rainbow.js"></script>
+		<script src="../docs/assets/js/language/generic.js"></script>
+		<script src="../docs/assets/js/language/html.js"></script>
+		<script src="../docs/assets/js/language/css.js"></script>
+		<script src="../docs/assets/js/language/javascript.js"></script>
+
+
+	</body>
+</html>

@@ -1,0 +1,81 @@
+//.room-plan
+//.fixedTable .table
+//  background-color: white
+//  width: auto
+//  //max-width: 100%
+//  tr
+//    td, th
+//      min-width: 100px
+//      width: 100px
+//      min-height: 20px
+//      height: 20px
+//      padding: 5px
+//
+//.fixedTable-header
+//  //width: 310px
+//  min-width: 310px
+//  max-width: 80%
+//  height: 30px
+//  margin-left: 110px
+//  overflow: hidden
+//  border-bottom: 1px solid #CCC
+//
+//.fixedTable-sidebar
+//  width: 110px
+//  height: 310px
+//  float: left
+//  overflow: hidden
+//  border-right: 1px solid #CCC
+//
+//.fixedTable-body
+//  overflow: auto
+//  //width: 310px
+//  min-width: 310px
+//  max-width: 80%
+//  height: 310px
+//  float: left
+
+
+$cellHeight: 20px
+$cellWidth: 100px
+$cellPadding: 5px
+
+$cellsWide: 5
+$cellsHigh: 15
+
+.fixedTable
+  .table
+    background-color: white
+    width: auto
+    tr
+      td, th
+        min-width: $cellWidth
+        width: $cellWidth
+        min-height: $cellHeight
+        height: $cellHeight
+        padding: $cellPadding
+
+
+
+  &-header
+    min-width: ($cellWidth * $cellsWide) + ($cellPadding * 2)
+    max-width: 80%
+    height: $cellHeight + ($cellPadding * 2)
+    margin-left: $cellWidth + ($cellPadding * 2)
+    overflow: hidden
+    border-bottom: 1px solid #CCC
+
+  &-sidebar
+    width: $cellWidth + ($cellPadding * 2)
+    height: $cellHeight * $cellsHigh + ($cellPadding * 2)
+    float: left
+    overflow: hidden
+    border-right: 1px solid #CCC
+
+  &-body
+    overflow: auto
+    min-width: ($cellWidth * $cellsWide) + ($cellPadding * 2)
+    max-width: 80%
+    height: ($cellHeight * $cellsHigh) + ($cellPadding * 2)
+    float: left
+

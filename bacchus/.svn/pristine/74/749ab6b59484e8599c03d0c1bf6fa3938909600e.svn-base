@@ -1,0 +1,43 @@
+.right-menu-co
+  border: 1px solid #888
+  text-align: center
+  ul
+    margin-left: 0
+    margin-bottom: 0
+    li
+      list-style: none
+      padding: 10px 0
+      vertical-align: middle
+      //border-bottom: 1px solid #ededed
+      //&:last-child
+      //  border-bottom: none
+      img
+        width: 48px
+        height: 48px
+        border-radius: 48px
+
+@mixin icon-bk($imgpath,$imgpathHover,$repeat: no-repeat,$bk-size: 48px 48px)
+  background: url($imgpath)
+  //position: $position
+  repeat: $repeat
+  background-size: $bk-size
+  &:hover
+    background: url($imgpathHover)
+    repeat: $repeat
+    background-size: $bk-size
+
+.icon-co-03
+  @include icon-bk('../images/icon/03.png','../images/icon/03-1.png')
+.icon-co-10
+  @include icon-bk('../images/icon/10.png','../images/icon/10-1.png')
+.icon-co-14
+  @include icon-bk('../images/icon/14.png','../images/icon/14-1.png')
+
+
+//
+//.icon-co-14
+//  background: url('../images/icon/14.png') no-repeat
+//  background-size: 48px 48px
+//  &:hover
+//    background: url('../images/icon/14-1.png') no-repeat
+//    background-size: 48px 48px

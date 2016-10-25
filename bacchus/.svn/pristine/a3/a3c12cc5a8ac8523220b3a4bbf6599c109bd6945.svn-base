@@ -1,0 +1,13 @@
+
+    jQuery(function($) {
+        $('.sidebar-collapse').click(function(){
+            $('.companyInfo').toggle();
+        });
+
+        $('.top-ul>ul>li>a').click(function(){
+            $(a).removeClass('active-1');
+            $(this).addClass('active-1');
+        });
+
+        //$( "#bacchus-header" ).load( "bacchus-header.html" );
+    });

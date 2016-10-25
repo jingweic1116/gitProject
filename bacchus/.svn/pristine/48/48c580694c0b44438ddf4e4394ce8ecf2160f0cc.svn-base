@@ -1,0 +1,38 @@
+/* line 47, ../sass/table.sass */
+.fixedTable .table {
+  background-color: white;
+  width: auto;
+}
+/* line 51, ../sass/table.sass */
+.fixedTable .table tr td, .fixedTable .table tr th {
+  min-width: 100px;
+  width: 100px;
+  min-height: 20px;
+  height: 20px;
+  padding: 5px;
+}
+/* line 60, ../sass/table.sass */
+.fixedTable-header {
+  min-width: 510px;
+  max-width: 80%;
+  height: 30px;
+  margin-left: 110px;
+  overflow: hidden;
+  border-bottom: 1px solid #CCC;
+}
+/* line 68, ../sass/table.sass */
+.fixedTable-sidebar {
+  width: 110px;
+  height: 310px;
+  float: left;
+  overflow: hidden;
+  border-right: 1px solid #CCC;
+}
+/* line 75, ../sass/table.sass */
+.fixedTable-body {
+  overflow: auto;
+  min-width: 510px;
+  max-width: 80%;
+  height: 310px;
+  float: left;
+}

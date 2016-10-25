@@ -1,0 +1,149 @@
+<!--團體清單-->
+
+<!-- 開班　pop groupList-btn-modal-01-->
+<div id="groupList-btn-modal-01-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-01.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-01-message  -->
+
+<!-- 簽認單　pop groupList-btn-modal-02-->
+<div id="groupList-btn-modal-02-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-02.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-02-message  -->
+
+<!-- 團體名單　pop groupList-btn-modal-03-->
+<div id="groupList-btn-modal-03-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-03.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-03-message  -->
+
+<!-- 團體明細　pop groupList-btn-modal-04-->
+<div id="groupList-btn-modal-04-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-04.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-04-message  -->
+
+<!-- 住客帳維護　pop groupList-btn-modal-05-->
+<div id="groupList-btn-modal-05-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-05.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-05-message  -->
+
+<!-- 房租總額　pop groupList-btn-modal-06 -->
+<div id="groupList-btn-modal-06-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-06.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-06-message  -->
+
+<!-- 團體轉帳 pop groupList-btn-modal-07-->
+<div id="groupList-btn-modal-07-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-07.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-07-message  -->
+
+<!-- 預估款轉入　pop groupList-btn-modal-08-->
+<div id="groupList-btn-modal-08-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-08.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-08-message  -->
+
+<!-- FOC　pop groupList-btn-modal-09-->
+<div id="groupList-btn-modal-09-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-09.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-09-message  -->
+
+<!-- 改導遊　pop groupList-btn-modal-10-->
+<div id="groupList-btn-modal-10-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-10.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-10-message  -->
+
+<!-- 改住客　pop groupList-btn-modal-11-->
+<div id="groupList-btn-modal-11-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-11.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-11-message  -->
+
+<!-- 改房價　pop groupList-btn-modal-12-->
+<div id="groupList-btn-modal-12-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-12.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-12-message  -->
+
+<!-- 預估款　pop groupList-btn-modal-13-->
+<div id="groupList-btn-modal-13-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-13.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-13-message  -->
+
+<!-- 改公帳號CO日　pop groupList-btn-modal-14 -->
+<div id="groupList-btn-modal-14-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-14.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-14-message  -->
+
+<!-- 改子房間CO日 pop groupList-btn-modal-15-->
+<div id="groupList-btn-modal-15-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-15.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-15-message  -->
+
+<!-- 團體印帳單　pop groupList-btn-modal-16-->
+<div id="groupList-btn-modal-16-message" class="hide">
+    <a href="#" data-toggle="modal">
+        <img src="../assets/images/popPage/groupListPop/groupList-pop-16.png" style="width: 100%;"/>
+    </a>
+</div><!-- /.groupList-btn-modal-16-message  -->
+
+<!-- errorTip→ 當這個放在這裡時，無法跳出第二層的彈跳視窗-->
+<!--功能選項　pop groupList-btn-modal-option-->
+<div id="groupList-btn-modal-option-message" class="hide center">
+    <div class="btn-group">
+        <a class="btn btn-primary optionBtn" id="groupList-btn-modal-10">
+            改導遊
+        </a>
+
+        <a class="btn btn-primary optionBtn" id="groupList-btn-modal-11">
+            改住客
+        </a>
+        <a class="btn btn-primary optionBtn" id="groupList-btn-modal-12">
+            改房價
+        </a>
+        <a class="btn btn-primary optionBtn" id="groupList-btn-modal-13">
+            預估款
+        </a>
+    </div>
+    <br>
+    <br>
+    <div class="btn-group">
+        <a class="btn btn-primary optionBtn" id="groupList-btn-modal-14">
+            改公帳號CO日
+        </a>
+        <a class="btn btn-primary optionBtn" id="groupList-btn-modal-15">
+            子房間CO日
+        </a>
+        <a class="btn btn-primary optionBtn" id="groupList-btn-modal-16">
+            團體印帳
+        </a>
+    </div>
+    <br>
+    <br>
+</div>
+<!-- /.groupList-btn-modal-option-message  -->

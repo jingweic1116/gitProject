@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>館別備註</title>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!-- Save for Web Slices (館別備註.png) -->
+<div class="psd_page">
+	<table id="___01" width="1281" height="801" border="0" cellpadding="0" cellspacing="0">
+		<tr>
+			<td colspan="8" rowspan="2">
+				<img src="../assets/images/doRemark/doRemark_01.gif" width="1247" height="73" alt=""></td>
+			<td>
+				<a href="indexMain.html">
+					<img src="../assets/images/doRemark/doRemark_02.gif" width="33" height="42" alt="">
+				</a>
+			</td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="1" height="42" alt=""></td>
+		</tr>
+		<tr>
+			<td rowspan="3">
+				<img src="../assets/images/doRemark/doRemark_03.gif" width="33" height="246" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="1" height="31" alt=""></td>
+		</tr>
+		<tr>
+			<td rowspan="5">
+				<img src="../assets/images/doRemark/doRemark_04.gif" width="22" height="727" alt=""></td>
+			<td>
+				<a href="basic_info.html">
+					<img src="../assets/images/doRemark/doRemark_05.gif" width="102" height="28" alt="">
+				</a>
+			</td>
+			<td rowspan="5">
+				<img src="../assets/images/doRemark/doRemark_06.gif" width="7" height="727" alt=""></td>
+			<td>
+				<a href="nlc_info.html">
+				<img src="../assets/images/doRemark/doRemark_07.gif" width="102" height="28" alt="">
+				</a>
+			</td>
+			<td rowspan="5">
+				<img src="../assets/images/doRemark/doRemark_08.gif" width="6" height="727" alt=""></td>
+			<td>
+				<a href="doRemark.html">
+					<img src="../assets/images/doRemark/doRemark_09.gif" width="107" height="28" alt="">
+				</a>
+			</td>
+			<td colspan="2" rowspan="2">
+				<img src="../assets/images/doRemark/doRemark_10.gif" width="901" height="215" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="1" height="28" alt=""></td>
+		</tr>
+		<tr>
+			<td rowspan="4">
+				<img src="../assets/images/doRemark/doRemark_11.gif" width="102" height="699" alt=""></td>
+			<td rowspan="4">
+				<img src="../assets/images/doRemark/doRemark_12.gif" width="102" height="699" alt=""></td>
+			<td rowspan="4">
+				<img src="../assets/images/doRemark/doRemark_13.gif" width="107" height="699" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="1" height="187" alt=""></td>
+		</tr>
+		<tr>
+			<td rowspan="3">
+				<img src="../assets/images/doRemark/doRemark_14.gif" width="852" height="512" alt=""></td>
+			<td colspan="2">
+				<a href="option.html">
+					<img src="../assets/images/doRemark/doRemark_15.gif" width="82" height="65" alt="">
+				</a>
+			</td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="1" height="65" alt=""></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<a href="indexMain.html">
+					<img src="../assets/images/doRemark/doRemark_16.gif" width="82" height="65" alt="">
+				</a>
+			</td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="1" height="65" alt=""></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<img src="../assets/images/doRemark/doRemark_17.gif" width="82" height="382" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="1" height="382" alt=""></td>
+		</tr>
+		<tr>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="22" height="1" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="102" height="1" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="7" height="1" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="102" height="1" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="6" height="1" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="107" height="1" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="852" height="1" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="49" height="1" alt=""></td>
+			<td>
+				<img src="../assets/images/doRemark/&#x9593;&#x8ddd;.gif" width="33" height="1" alt=""></td>
+			<td></td>
+		</tr>
+	</table>
+	<!-- End Save for Web Slices -->
+</div>
+</body>
+</html>

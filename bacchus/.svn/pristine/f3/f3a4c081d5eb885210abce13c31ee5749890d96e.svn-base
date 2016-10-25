@@ -1,0 +1,73 @@
+/* Basic table styling */
+table {
+    width:100%;
+    border-spacing:0;
+    border-collapse:collapse;
+    position:relative;
+
+}
+table,
+th,
+td {
+    border:1px solid #ccc;
+}
+th,
+td {
+    padding:6px 8px;
+    vertical-align:top;
+}
+caption,
+th {
+    font-weight:bold;
+    text-align:left;
+}
+thead th {
+    background:#f3f3f3;
+    white-space:nowrap;
+}
+
+/* Scrollable table styling */
+.scrollable{
+    /*max-width: 100%;*/
+}
+.scrollable.has-scroll {
+    position:relative;
+    overflow-x:hidden; /* Clips the shadow created with the pseudo-element in the next rule. Not necessary for the actual scrolling. */
+
+}
+/* 陰影 */
+/*.scrollable.has-scroll:after {*/
+    /*position:absolute;*/
+    /*top:0;*/
+    /*left:100%;*/
+    /*width:50px;*/
+    /*height:100%;*/
+    /*border-radius:10px 0 0 10px / 50% 0 0 50%;*/
+    /*box-shadow:-5px 0 10px rgba(0, 0, 0, 0.25);*/
+    /*content:'';*/
+/*}*/
+
+/* This is the element whose content will be scrolled if necessary */
+.scrollable.has-scroll > div {
+    overflow-x:auto;
+    overflow-y:auto;
+    height: 400px;
+}
+
+/* Style the scrollbar to make it visible in iOS, Android and OS X WebKit browsers (where user preferences can make scrollbars invisible until you actually scroll) */
+.scrollable > div::-webkit-scrollbar {
+    height:12px;
+    width: 12px;
+}
+.scrollable > div::-webkit-scrollbar-track {
+    box-shadow:0 0 2px rgba(0,0,0,0.15) inset;
+    background:#f0f0f0;
+}
+.scrollable > div::-webkit-scrollbar-thumb {
+    border-radius:6px;
+    background:#ccc;
+}
+.scrollable > table >tbody{
+    overflow-y:auto;
+    height: 200px;
+}

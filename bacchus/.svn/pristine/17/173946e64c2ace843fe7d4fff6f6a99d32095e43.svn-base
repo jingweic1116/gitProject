@@ -1,0 +1,39 @@
+
+    jQuery(function($) {
+        $('.sidebar-collapse').click(function(){
+            $('.companyInfo').toggle();
+        });
+
+
+
+        $('.top-ul>ul>li>a').click(function(){
+            $(a).removeClass('active-1');
+            $(this).addClass('active-1');
+        });
+
+        //$( "#bacchus-header" ).load( "bacchus-header.html" );
+
+        // reception search Bar
+        $('.show-search-detail').click(function(){
+            $('.rece-search-detail').slideToggle();
+        });
+
+        // table　排版問題
+        // Change the selector if needed
+        var $table = $('table.co-scroll'),
+            $bodyCells = $table.find('tbody tr:first').children(),
+            colWidth;
+
+        // Adjust the width of thead cells when window resizes
+        $(window).resize(function() {
+            // Get the tbody columns width array
+            colWidth = $bodyCells.map(function() {
+                return $(this).width();
+            }).get();
+
+            // Set the width of thead columns
+            $table.find('thead tr').children().each(function(i, v) {
+                $(v).width(colWidth[i]);
+            });
+        }).resize(); // Trigger resize handler
+    });

@@ -1,0 +1,48 @@
+.page-header
+  padding-bottom: 0
+h3
+  font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Arial, sans-serif
+.modal-body
+  text-align: center
+  margin: 20px auto
+
+/* breadcrumbs */
+.breadcrumbs-fixed + .page-content
+  padding-top: 70px
+
+@media (min-width: 992px) and (max-width: 1240px)
+  .navbar-fixed-top + .main-container
+    //padding-top: 90px //edit 1024解析
+
+.top-sec-ul
+  max-width: 100%
+  display: inline-block
+  padding: 5px 0 0 0
+  background: #F5F5F5
+  //z-index: 1030
+
+/* header css */
+.ace-nav>li.className
+  padding: 0 10px
+  span
+    color: #fff
+
+/* jqGrid html */
+.jqGridEdit-table
+  .ui-jqgrid .ui-jqgrid-labels
+    background: #c0d6ee
+    background-image: none
+  &.margin-5
+    margin: 0 0 10px 0
+.rateCode03-table
+  margin: 20px 0 0 0
+
+//int_Counter.html 綜合櫃台 左邊的表格
+.tabs-left.counter-tabs > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a
+  min-width: 30px
+  font-weight: bold
+
+@media screen and (max-width: 992px)
+  .top-sec-ul
+    z-index: 1024
+    padding-top: 50px
