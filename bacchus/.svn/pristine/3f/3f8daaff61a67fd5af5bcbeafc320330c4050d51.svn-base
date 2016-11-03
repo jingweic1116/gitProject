@@ -29,9 +29,6 @@ body{
 	vertical-align: top;
 }
 .width1{width:1%;}
-.width2{width:2%;}
-.width3{width:3%;}
-.width4{width:4%;}
 .width5{width:5%;}
 .width6{width:6%;}
 .width7{width:7%;}
@@ -40,16 +37,11 @@ body{
 .width10{width:10%;}
 .width11{width:11%;}
 .width12{width:12%;}
-.width13{width:13%;}
 .width125{width:12.5%;}
 .width14{width:14%;}
 .width15{width:15%;}
-.width16{width:16%;}
-.width17{width:17%;}
 .width18{width:18%;}
-.width19{width:19%;}
 .width20{width:20%;}
-.width21{width:21%;}
 .width22{width:22%;}
 .width25{width:25%;}
 .width28{width:28%;}
@@ -62,14 +54,9 @@ body{
 .width48{width:48%;}
 .width49{width:49%;}
 .width50{width:50%;}
-.width55{width:55%;}
-.width65{width:65%;}
 .width60{width:60%;}
 .width70{width:70%;}
-.width71{width:71%;}
 .width72{width:72%;}
-.width73{width:73%;}
-.width74{width:74%;}
 .width75{width:75%;}
 .width80{width:80%;}
 .width85{width:85%;}
@@ -88,7 +75,6 @@ input{
   box-shadow: none !important;
   -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
-  height:20px;
 }
 
 select {
@@ -97,12 +83,6 @@ select {
   color: #858585;
   background-color: #FFF;
   border: 1px solid #D5D5D5;
-  
-}
-
-.select-height{
-	height:20px;
-	font-size: 0.8em;
 }
 
 .table_bascchus{
@@ -221,6 +201,7 @@ select {
 .form-widet-content-notab{
 	padding-top:16px;
 	padding-left:5px;
+	background-color: #fff;
 
 }
 
@@ -285,7 +266,6 @@ select {
     display:table-cell;
     white-space: nowrap;
     vertical-align: middle;
-    height:20px;
 }
 .resvDesLeft{
 	width:70%;
@@ -405,5 +385,79 @@ select {
 	background-color: #fff;
 	text-decoration: none;
 	text-align: center;
+}
+
+/*index-RoomNum-modal-01*/
+/*index-RoomNum-modal-02*/
+.RoomNumcodeDiv{
+	padding:1%;
+}
+
+.RoomNumbtnDiv{
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align: center;
+}
+
+/*index-RoomNum-modal-01.html*/
+.RoomNum-modal01-table-s1 table{
+	width:100%;
+}
+.RoomNum-modal01-table-s1 table,
+.RoomNum-modal01-table-s1 th,
+.RoomNum-modal01-table-s1 td,
+.RoomNum-modal01-table-s1 tr{
+	border:1px solid #595757;
+}
+.RoomNum-modal01-table {
+	border:1px solid #595757;
+	width:650px;
+}
+
+.RoomNum-modal01-table td, .RoomNum-modal01-table tr{
+	border:1px solid #595757;
+} 
+
+
+.blue-tr{
+	background-color:#BED2E9;
+	text-align: center;
+}
+
+.gray-tr{
+	background-color:#EFEFEF;
+}
+
+.RoomNum-modal01-bottom{
+	background-color:#BADDF8 ;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:650px;
+}
+
+.RoomNum-modal01-bottom table,td,tr{
+	border:none;
+}
+.RoomNum-modal01-bottom td{
+	padding-top:1px;
+}
+
+.RoomNum-modal01-btn{
+	width:100%;
+	margin-top: 10px;
+}
+
+.RoomNum-modal01-btn1{
+	height:20px;
+	border:1px solid #595757;
+	float:right;
+	margin-top:10px;
+	margin-bottom:2px;
+	margin-right:5px; 
+
+}
+.RoomNum-modal01-btn2{
+	height:24px;
+	border:1px solid #595757;
 }
 
