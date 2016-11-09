@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
-    <title>團體清單 / PMS系統 / 美麗信花園大酒店</title>
+    <title>住客查詢 / PMS系統 / 美麗信花園大酒店</title>
 
     <meta name="description" content="overview &amp; stats"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../components/_mod/jquery-ui/jquery-ui.css"/>
     <link rel="stylesheet" href="../components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css"/>
     <link rel="stylesheet" href="../components/_mod/jqgrid/ui.jqgrid.css"/>
-
     <!-- text fonts -->
     <link rel="stylesheet" href="../assets/css/ace-fonts.css"/>
 
@@ -50,8 +49,7 @@
 <!-- #section:basics/navbar.layout -->
 <div id="navbar" class="navbar navbar-default          ace-save-state navbar-fixed-top">
 
-</div>
-<!-- /.ace-save-state navbar-fixed-top-->
+</div><!-- /.ace-save-state navbar-fixed-top-->
 <!-- include header.html -->
 
 <!-- /section:basics/navbar.layout -->
@@ -64,7 +62,7 @@
     </script>
 
     <!-- #section:basics/sidebar -->
-    <div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+    <div id="sidebar" class="sidebar                  responsive                    ace-save-state sidebar-fixed">
         <script type="text/javascript">
             try {
                 ace.settings.loadState('sidebar')
@@ -103,8 +101,7 @@
 
                 <span class="btn btn-danger"></span>
             </div>
-        </div>
-        <!-- /.sidebar-shortcuts -->
+        </div><!-- /.sidebar-shortcuts -->
 
         <ul class="nav nav-list">
             <li>
@@ -636,7 +633,7 @@
                 <!--<div class="top-ul" style="position: fixed; right: 0; left: 200px; top: auto; z-index: 1024;">-->
                 <div class="top-ul ">
                     <ul>
-                        <a href="indexMain.html" class="active-01">
+                        <a href="indexMain.html">
                             <li> 訂房</li>
                         </a>
                         <a href="reception.html">
@@ -664,11 +661,10 @@
                             <li>自訂</li>
                         </a>
                     </ul>
-                </div>
-                <!-- /.top-ul -->
+                </div> <!-- /.top-ul -->
                 <!--<div class="secondMenu-ul secondMenu-ul-fixed" style="position: fixed;top:100px; right: 0; left: 200px;  z-index: 1024;">-->
 
-                <div class="secondMenu-ul">
+                <div class="secondMenu-ul ">
                     <ul>
                         <a href="indexMain.html">
                             <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>依房型訂房</li>
@@ -698,17 +694,14 @@
                             <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>交辦事項</li>
                         </a>
                     </ul>
-                </div>
-                <!-- /.secondMenu-ul -->
+                </div> <!-- /.secondMenu-ul -->
 
-            </div>
-            <!-- /.col-xs-12 -->
+            </div><!-- /.col-xs-12 -->
             <!-- /section:basics/content.top-sec-ul -->
             <div class="page-content">
-                <div class="page-header">
+                <div class="page-header ">
 
-                </div>
-                <!-- /.page-header -->
+                </div><!-- /.page-header -->
 
                 <div class="col-xs-12">
                     <div class="row">
@@ -716,12 +709,34 @@
                             <div class="row search-content">
 
                                 <div class="search-co">
+
                                     <div class="search-co-h">
                                         <i class="ace-icon fa fa-search search-icon"></i>
                                         <span>搜尋</span>
                                         <div class="row search-right-btn">
                                             <div class="right-btn-menu-co">
                                                 <ul>
+                                                    <li>
+                                                        <!-- 寫法01 -->
+                                                        <!--<img class="icon-co-14"/>-->
+                                                        <!--<br>-->
+                                                        <!--<span>查詢</span>-->
+
+                                                        <!-- 寫法02 -->
+                                                        <div class="" data-rel="tooltip" data-placement="bottom"
+                                                             title="查詢" style="padding: 0 0 5px 0;">
+                                                            <div class="icon-reStyle icon-co-14"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <!--<img class="icon-co-14" />-->
+                                                        <!--<br>-->
+                                                        <!--<span>清除</span>-->
+                                                        <div class="" data-rel="tooltip" data-placement="bottom"
+                                                             title="清除查詢" style="padding: 0 0 5px 0;">
+                                                            <div class="icon-reStyle icon-co-11"></div>
+                                                        </div>
+                                                    </li>
                                                     <li>
                                                         <i class="fa fa-angle-down show-search-detail fa-lg"></i>
                                                     </li>
@@ -731,110 +746,124 @@
                                     </div>
                                     <div class="row">
                                         <div class="search-co-content col-xs-12">
-                                            <div class="col-sm-4">
-                                                <div class="block-table">
-                                                    <label>查詢日期</label>
-                                                    <input type="text"/>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="block-table">
-                                                    <label>住宿天數</label>
-                                                    <input type="text"/>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="block-table">
-                                                    <label>
-                                                        <input type="checkbox" class="ace" checked/>
-                                                        <span class="lbl"> 隱藏無空房數房價</span>
+                                            <div class="block-table keyWord">
+                                                <div class="" style="">
+                                                    <label style="width: 90px;  margin: 0 0 0 17px;">速查</label>
+                                                    <input type="text" style="margin: 0 0 0 4px;"/>
+                                                    <!--</div>-->
+                                                    <!--<div style="display: inline-block">-->
+                                                    <label class="middle" style="text-align: left; margin: 0 0 0 15px; line-height: 25px;">
+                                                        <input class="ace" type="checkbox" checked>
+                                                        <span class="lbl"> 關鍵字</span>
                                                     </label>
                                                 </div>
+                                                <div class="clearfix"></div>
                                             </div>
                                         </div>
-                                        <div class="search-co-content col-xs-12 rece-search-detail" style="display: none;">
+                                        <div class="search-co-content col-xs-12 rece-search-detail"
+                                             style="display: none;">
                                             <div class="col-sm-4">
                                                 <div class="block-table">
-                                                    <label>訂房公司</label>
+                                                    <label>姓名</label>
                                                     <input type="text"/>
                                                 </div>
-                                            </div>
-                                            <!-- /.col-sm-4 -->
+
+                                                <div class="block-table">
+                                                    <label>C/I日期</label>
+                                                    <input type="text"/>
+                                                </div>
+
+                                                <div class="block-table">
+                                                    <label>消費總額</label>
+                                                    <input type="text"/>
+                                                </div>
+
+                                                <div class="block-table">
+                                                    <label>公司名稱</label>
+                                                    <input type="text"/>
+                                                </div>
+
+                                            </div> <!-- /.col-sm-4 -->
                                             <div class="col-sm-8">
                                                 <!--<div class="col-sm-12">-->
                                                 <div class="col-sm-6">
                                                     <div class="block-table">
-                                                        <!--<form class="form-inline">-->
-                                                        <label>房價代號</label>
+                                                        <label>歷史編號</label>
                                                         <input type="text"/>
-                                                        <!--<label class="inline key-Word">-->
-                                                        <!--<input type="checkbox" class="ace" checked/>-->
-                                                        <!--<span class="lbl"> 關鍵字</span>-->
-                                                        <!--</label>-->
-                                                        <!--</form>-->
                                                     </div>
 
-                                                </div>
-                                                <!-- /.col-sm-6 -->
+                                                    <div class="block-table">
+                                                        <label>出生日期</label>
+                                                        <input type="text"/>
+                                                    </div>
+
+                                                    <div class="block-table">
+                                                        <label>代訂公司代號</label>
+                                                        <input type="text"/>
+                                                    </div>
+                                                    <div class="block-table">
+                                                        <label>是否收取DM</label>
+                                                        <input type="text"/>
+                                                    </div>
+
+                                                </div> <!-- /.col-sm-6 -->
 
                                                 <div class="col-sm-6">
 
-                                                </div>
-                                                <!-- /col-sm-6 -->
+                                                    <div class="block-table">
+                                                        <label>身分證字號</label>
+                                                        <input type="text"/>
+                                                    </div>
+
+                                                    <div class="block-table">
+                                                        <label>國籍</label>
+                                                        <input type="text"/>
+                                                    </div>
+
+                                                    <div class="block-table">
+                                                        <label>公司代號</label>
+                                                        <input type="text"/>
+                                                    </div>
+
+                                                </div> <!-- /col-sm-6 -->
+
+                                                <!--</div>-->
+                                                <!--<div class="col-sm-12">-->
+
+                                                <!--<div class="block-table keyWord">-->
+                                                <!--<div class="" style="">-->
+                                                <!--<label style="width: 90px;  margin: 0 0 0 17px;">Full Name</label>-->
+                                                <!--<input type="text" style="margin: 0 0 0 4px;"/>-->
+                                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                                <!--&lt;!&ndash;<div style="display: inline-block">&ndash;&gt;-->
+                                                <!--<label class="middle" style="text-align: left; margin: 0 0 0 15px; line-height: 25px;">-->
+                                                <!--<input class="ace" type="checkbox" checked>-->
+                                                <!--<span class="lbl"> 關鍵字</span>-->
+                                                <!--</label>-->
+                                                <!--</div>-->
+                                                <!--<div class="clearfix"></div>-->
+                                                <!--</div>-->
+
+
+                                                <!--</div> &lt;!&ndash; /.col-sm-4 &ndash;&gt;-->
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- row-->
-                                    <div class="row search-footer-btn">
-                                        <div class="footer-btn-menu-co">
-                                            <ul>
-                                                <li>
-                                                    <!-- 寫法02 -->
-                                                    <div class="" data-rel="tooltip" data-placement="bottom" title="查詢"
-                                                         style="padding: 0 0 5px 0;">
-                                                        <div class="icon-reStyle icon-co-14"></div>
-                                                    </div>
-                                                </li>
-                                                <li>
+                                    </div> <!-- row-->
 
-                                                    <div class="" data-rel="tooltip" data-placement="bottom"
-                                                         title="清除查詢" style="padding: 0 0 5px 0;">
-                                                        <div class="icon-reStyle icon-co-11"></div>
-                                                    </div>
+                                </div> <!-- /.search-co -->
 
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <!-- /.footer-btn-menu-co -->
-                                    </div>
-                                    <!-- /.search-footer-btn -->
+                            </div> <!-- /.row  search-content-->
+                        </div> <!-- /.col-sm-12 -->
+                    </div> <!-- /.row -->
+                </div><!-- /.col-xs-12 -->
 
-                                </div>
-                                <!-- /.search-co -->
-
-                            </div>
-                            <!-- /.row  search-content-->
-
-                        </div>
-                        <!-- /.col-sm-12 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.col-xs-12 -->
                 <div class="col-xs-12">
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-11">
                                     <div class="row">
-                                        <img src="../assets/images/reservationRateCode-01.png"  style="max-width: 100%;"/>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12 no-padding-left rateCode03-table">
-                                            <div class="jqGridEdit-table">
-                                                <table id="rateCode03-table"></table>
-                                            </div>
-                                        </div>
+                                        <img src="../assets/images/inhouseQuery.png" style="max-width: 100%"/>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-1">
@@ -843,41 +872,53 @@
                                             <ul>
                                                 <!--<li class="icon-co-01">-->
                                                 <li>
-                                                    <!--<img src="../assets/images/icon/14.png" />-->
-                                                    <a href="reservation-01.html">
-                                                    <div class="icon-co-14"></div>
+                                                    <a href="basic_info.html">
+                                                        <div class="icon-co-14"></div>
                                                     </a>
-                                                    <span>訂房</span>
+                                                    <span>新增資料</span>
+                                                </li>
+                                                <li>
+                                                    <a href="basic_info.html">
+                                                        <div class="icon-co-14"></div>
+                                                    </a>
+                                                    <span>修改資料</span>
                                                 </li>
                                                 <li>
                                                     <div class="icon-co-14"></div>
-                                                    <span>選擇房價資料</span>
+                                                    <span>刪除資料</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#iHQ-modal-02" data-toggle="modal" style="cursor: pointer;">
+                                                        <div class="icon-co-14"></div>
+                                                    </a>
+                                                    <span>消費重整</span>
                                                 </li>
                                                 <li>
                                                     <div class="icon-co-14"></div>
-                                                    <span>清除訂房資料</span>
+                                                    <span>以下全選</span>
                                                 </li>
                                                 <li>
                                                     <div class="icon-co-14"></div>
-                                                    <span>單筆刪除</span>
+                                                    <span>以下全不選</span>
                                                 </li>
-
-
+                                                <li>
+                                                    <a href="#iHQ-modal-01" data-toggle="modal" style="cursor: pointer;">
+                                                        <div class="icon-co-14"></div>
+                                                    </a>
+                                                    <span>住客歷史合併</span>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- /.col-xs-12 -->
                     </div>
-                </div>
-                <!-- /.col-xs-12 -->
-            </div>
-            <!-- /.page-content -->
+                </div><!-- /.col-xs-12 -->
+
+            </div><!-- /.page-content -->
         </div>
-    </div>
-    <!-- /.main-content -->
+    </div><!-- /.main-content -->
 
     <div class="footer">
         <div class="footer-inner">
@@ -894,11 +935,48 @@
         </div>
     </div>
 
+    <!-- 住客歷史合併 iHQ-modal-01 -->
+    <div id="iHQ-modal-01" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-fullScreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">&times;</button>
+                    <!--<h3 class="smaller lighter blue no-margin">應收總合計:4500</h3>-->
+                </div>
+
+                <div class="modal-body">
+                    <a href="#" data-toggle="modal">
+                        <img id="iHQ-modal-01-img" src="../assets/images/historyMerge.png" style="max-width: 100%;"/>
+                    </a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div> <!-- /.住客歷史合併 iHQ-modal-01 -->
+
+    <!-- 消費重整 iHQ-modal-02 -->
+    <div id="iHQ-modal-02" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-fullScreen-blockSet" style="max-width: 100%; ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">&times;</button>
+                    <h3 class="smaller lighter no-margin" style="text-align: left;">消費重整</h3>
+                </div>
+
+                <div class="modal-body">
+                    <a href="#" data-toggle="modal">
+                        <img src="../assets/images/popPage/inhouseQuery-pop.png" style="max-width: 100%;"/>
+                    </a>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+
     <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
         <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
     </a>
-</div>
-<!-- /.main-container -->
+</div><!-- /.main-container -->
 
 <!-- basic scripts -->
 
@@ -923,7 +1001,6 @@
 <script src="../components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 <script src="../components/jqGrid/js/jquery.jqGrid.js"></script>
 <script src="../components/jqGrid/js/i18n/grid.locale-en.js"></script>
-
 
 <!-- ace scripts -->
 <script src="../assets/js/src/elements.scroller.js"></script>
@@ -951,17 +1028,38 @@
 <script src="../assets/js/src/ace.searchbox-autocomplete.js"></script>
 
 <!-- inline scripts related to this page -->
+
 <script type="text/javascript">
-    jQuery(function($) {
+    jQuery(function ($) {
         $('[data-rel=tooltip]').tooltip();
-        $('[data-rel=popover]').popover({html: true});
     });
-
-
-
-//rateCode03
-    var rateCode03_data =
+    //reser-Query-table
+    var reser_Query_data =
             [
+                {
+                    kind: "A",
+                    states: "ok",
+                    name: "peter",
+                    no: "4",
+                    quick: "40",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    useRoom: "經典雙人房",
+                    rooms: "經典雙人房",
+                    rowRoom: "3",
+                    ciNum: "3",
+                    fullName: "Rain chen",
+                    groupNum: "3",
+                    company: "athena",
+                    contact: "jack",
+                    priceNo: "40",
+                    roomSource: "3580",
+                    depositNo: "2",
+                    checkStates: "2",
+                    checkDate: "2016/08/22",
+                    firstName: "0"
+                },
                 {
                     id: "G79",
                     name: "9",
@@ -976,7 +1074,418 @@
                     adult: "2",
                     kid: "2",
                     baby: "0"
-                },{
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
+                    id: "G79",
+                    name: "9",
+                    note: "Rain chen",
+                    ciDate: "2016/08/17",
+                    coDate: "2016/08/22",
+                    day: "5",
+                    room: "3",
+                    price: "3540",
+                    service_price: "40",
+                    total: "3580",
+                    adult: "2",
+                    kid: "2",
+                    baby: "0"
+                },
+                {
                     id: "G79",
                     name: "9",
                     note: "Rain chen",
@@ -992,11 +1501,9 @@
                     baby: "0"
                 }
 
-
-
             ];
 
-    var sub_rateCode03_data =
+    var sub_reser_Query_data =
             [
                 {id: "1", name: "sub grid item 1", qty: 11},
                 {id: "2", name: "sub grid item 2", qty: 3},
@@ -1009,11 +1516,12 @@
             ];
 
     jQuery(function ($) {
-        var grid_selector = "#rateCode03-table";
+        var grid_selector = "#reser-Query-table";
         var pager_selector = "#grid-pager";
 
 
         var parent_column = $(grid_selector).closest('[class*="col-"]');
+        var parent_column = $(grid_selector).closest(".ui-jqgrid-bdiv").css({ 'overflow-x' : 'scroll' });
         //resize to fit page size
         $(window).on('resize.jqGrid', function () {
             $(grid_selector).jqGrid('setGridWidth', parent_column.width());
@@ -1066,7 +1574,7 @@
                 $("#" + subgridDivId).html("<table id='" + subgridTableId + "'></table>");
                 $("#" + subgridTableId).jqGrid({
                     datatype: 'local',
-                    data: sub_rateCode03_data,
+                    data: sub_reser_Query_data,
                     colNames: ['No', 'Item Name', 'Qty'],
                     colModel: [
                         {name: 'id', width: 50},
@@ -1077,10 +1585,14 @@
             },
 
 
-            data: rateCode03_data,
+            data: reser_Query_data,
             datatype: "local",
             height: 300,
-            colNames: ['訂房', '房間代號', '房種', 'C/I日期', 'C/Ｏ日期', '天數', '間數', '房價', '服務費', '合計', '大人', '小孩', '嬰兒'],
+//            width: 300,
+            scrollPaging: true,
+            pagination: true,
+            scrollOffset: 2,
+            colNames: ['種類', '狀態', '訂房卡號', '序號', '速查', 'C/I日期', 'C/O日期', '天數', '使用房種', '間數', '排房數', 'C/I數', 'Full Name', '團號', '公司名稱', '連絡人', '房價代號', '訂房來源', '訂金編號', '確認狀態', '確認日期', 'First Name', 'Last Name'],
             colModel: [
 //						{name:'myac',index:'', width:80, fixed:true, sortable:false, resize:false,
 //							formatter:'actions',
@@ -1092,43 +1604,72 @@
 //								//editformbutton:true, editOptions:{recreateForm: true, beforeShowForm:beforeEditCallback}
 //							}
 //						},
-                {name: 'id', index: 'id', width: 60, sorttype: "int", editable: true},
-                {name: 'name', index: 'name', width: 150, editable: true, editoptions: {size: "20", maxlength: "30"}},
-                {
-                    name: 'note',
-                    index: 'note',
-                    width: 150,
-                    sortable: false,
-                    editable: true,
-                    edittype: "textarea",
-                    editoptions: {rows: "2", cols: "10"}
-                },
-                {name: 'ciDate', index: 'ciDate', width: 90, editable: true, sorttype: "date", unformat: pickDate},
-                {name: 'coDate', index: 'coDate', width: 90, editable: true, sorttype: "date", unformat: pickDate},
-                {name: 'day', index: 'day', width: 60, sorttype: "int", editable: true},
-                {name: 'room', index: 'room', width: 60, sorttype: "int", editable: true},
-                {name: 'price', index: 'price', width: 60, sorttype: "int", editable: true},
-                {name: 'service_price', index: 'service_price', width: 60, sorttype: "int", editable: true},
-                {name: 'total', index: 'total', width: 60, sorttype: "int", editable: true},
-                {name: 'adult', index: 'adult', width: 60, sorttype: "int", editable: true},
-                {name: 'kid', index: 'kid', width: 60, sorttype: "int", editable: true},
-                {name: 'baby', index: 'baby', width: 60, sorttype: "int", editable: true}
+                {name: 'kind', index: 'kind', sorttype: "int", editable: true},
+                {name: 'states', index: 'states', sorttype: "int", editable: true},
+                {name: 'name', index: 'name', editable: true, editoptions: {size: "20", maxlength: "30"}},
+                {name: 'no', index: 'no', sorttype: "int", editable: true},
+                {name: 'quick', index: 'quick', sorttype: "int", editable: true},
+                {name: 'ciDate', index: 'ciDate', editable: true, sorttype: "date", unformat: pickDate},
+                {name: 'coDate', index: 'coDate', editable: true, sorttype: "date", unformat: pickDate},
+                {name: 'day', index: 'day', sorttype: "int", editable: true},
+                {name: 'useRoom', index: 'useRoom', sorttype: "int", editable: true},
+                {name: 'rooms', index: 'rooms', sorttype: "int", editable: true},
+                {name: 'rowRoom', index: 'rowRoom', sorttype: "int", editable: true},
+                {name: 'ciNum', index: 'ciNum', sorttype: "int", editable: true},
+                {name: 'fullName', index: 'fullName', sorttype: "int", editable: true},
+                {name: 'groupNum', index: 'groupNum', sorttype: "int", editable: true},
+                {name: 'company', index: 'company', sorttype: "int", editable: true},
+                {name: 'contact', index: 'contact', sorttype: "int", editable: true},
+                {name: 'priceNo', index: 'priceNo', sorttype: "int", editable: true},
+                {name: 'roomSource', index: 'roomSource', sorttype: "int", editable: true},
+                {name: 'depositNo', index: 'depositNo', sorttype: "int", editable: true},
+                {name: 'checkStates', index: 'checkStates', sorttype: "int", editable: true},
+                {name: 'checkDate', index: 'checkDate', sorttype: "int", editable: true},
+                {name: 'firstName', index: 'firstName', width: 60, sorttype: "int", editable: true},
+                {name: 'lastName', index: 'lastName', width: 60, sorttype: "int", editable: true}
+
+// bak
+//                {name: 'kind', index: 'kind', width: 40, sorttype: "int", editable: true},
+//                {name: 'states', index: 'states', width: 40, sorttype: "int", editable: true},
+//                {name: 'name', index: 'name', width: 40, editable: true, editoptions: {size: "20", maxlength: "30"}},
+//                {name: 'no', index: 'no', width: 40, sorttype: "int", editable: true},
+//                {name: 'quick', index: 'quick', width: 40, sorttype: "int", editable: true},
+//                {name: 'ciDate', index: 'ciDate', width: 90, editable: true, sorttype: "date", unformat: pickDate},
+//                {name: 'coDate', index: 'coDate', width: 90, editable: true, sorttype: "date", unformat: pickDate},
+//                {name: 'day', index: 'day', width: 40, sorttype: "int", editable: true},
+//                {name: 'useRoom', index: 'useRoom', width: 90, sorttype: "int", editable: true},
+//                {name: 'rooms', index: 'rooms', width: 90, sorttype: "int", editable: true},
+//                {name: 'rowRoom', index: 'rowRoom', width: 40, sorttype: "int", editable: true},
+//                {name: 'ciNum', index: 'ciNum', width: 40, sorttype: "int", editable: true},
+//                {name: 'fullName', index: 'fullName', width: 90, sorttype: "int", editable: true},
+//                {name: 'groupNum', index: 'groupNum', width: 40, sorttype: "int", editable: true},
+//                {name: 'company', index: 'company', width: 60, sorttype: "int", editable: true},
+//                {name: 'contact', index: 'contact', width: 60, sorttype: "int", editable: true},
+//                {name: 'priceNo', index: 'priceNo', width: 40, sorttype: "int", editable: true},
+//                {name: 'roomSource', index: 'roomSource', width: 60, sorttype: "int", editable: true},
+//                {name: 'depositNo', index: 'depositNo', width: 60, sorttype: "int", editable: true},
+//                {name: 'checkStates', index: 'checkStates', width: 60, sorttype: "int", editable: true},
+//                {name: 'checkDate', index: 'checkDate', width: 60, sorttype: "int", editable: true},
+//                {name: 'firstName', index: 'firstName', width: 60, sorttype: "int", editable: true},
+//                {name: 'lastName', index: 'lastName', width: 60, sorttype: "int", editable: true}
 
             ],
 
             viewrecords: true,
             //控制顯示數量
-            rowNum: -1,
-            rowList: [10, 20, 30],
+            rowNum: 9999,
+//            rowList: [10, 20, 30],
             pager: pager_selector,
             altRows: true,
+            forceFit: true,
             //toppager: true,
 
             // false讓checkbox 消失
             multiselect: false,
             //multikey: "ctrlKey",
             multiboxonly: true,
-
+//            autowidth: true,
+            shrinkToFit: false,
             loadComplete: function () {
                 var table = this;
                 setTimeout(function () {
@@ -1142,8 +1683,7 @@
 
             editurl: "../dummy.php",//nothing is saved
 //					caption: "jqGrid with inline editing"
-
-            //,autowidth: true,
+//
 
 
             /**
@@ -1159,11 +1699,20 @@
              */
 
         });
-        $(window).triggerHandler('resize.jqGrid');//trigger window resize to make the grid get the correct size
+        // 控制 螢幕尺寸大小
+        $(window).triggerHandler('resize.jqGrid');
+        //trigger window resie to make the grid get the correct size
 
+//        $(window).bind("resize", function () {
+//            var containerWidth = $grid.closest(".container-fluid").width(),
+//                    p = $grid.jqGrid("getGridParam"),
+//                    cm = p.colModel[p.iColByName.ComboDuration]; //tblwidth
+//            $grid.jqGrid("setGridWidth", containerWidth);
+//            $grid.jqGrid("setColWidth", "ComboDuration", p.width - p.tblwidth + cm.width);
+//        }).triggerHandler("resize");
 
         //enable search/filter toolbar
-        //jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
+//        jQuery(grid_selector).jqGrid('filterToolbar',{defaultSearch:true,stringResult:true})
         //jQuery(grid_selector).filterToolbar({});
 
 
@@ -1395,9 +1944,47 @@
             $('.ui-jqdialog').remove();
         });
     });
-
 </script>
 
+<script type="text/javascript">
+    jQuery(function ($) {
+        $('.modal.aside').ace_aside();
+        /*-- aside-inside-modal 彈出視窗內的資訊 --*/
+        $('#aside-inside-modal').addClass('aside').ace_aside({container: '#my-modal > .modal-dialog'});
+
+        //$('#top-menu').modal('show')
+
+        // 手動讓前一個modal 關掉
+        $(function () {
+            return $(".modal").on("show.bs.modal", function () {
+                var curModal;
+                curModal = this;
+                $(".modal").each(function () {
+                    if (this !== curModal) {
+                        $(this).modal("hide");
+                    }
+                });
+//						$('body').addClass('modal-open').css('padding-right', '');
+            });
+        });
+//				$(document).on('hidden.bs.modal', function (event) {
+//					if ($('.modal:visible').length) {
+//						$('body').addClass('modal-open');
+//					}
+//				});
+
+
+        $(document).one('ajaxloadstart.page', function (e) {
+            //in ajax mode, remove before leaving page
+            $('.modal.aside').remove();
+            $(window).off('.aside')
+        });
+
+
+        //make content sliders resizable using jQuery UI (you should include jquery ui files)
+        //$('#right-menu > .modal-dialog').resizable({handles: "w", grid: [ 20, 0 ], minWidth: 200, maxWidth: 600});
+    })
+</script>
 <!-- the following scripts are used in demo only for onpage help and you don't need them -->
 <link rel="stylesheet" href="../assets/css/ace.onpage-help.css"/>
 <link rel="stylesheet" href="../docs/assets/js/themes/sunburst.css"/>

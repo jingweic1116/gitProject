@@ -1,0 +1,141 @@
+
+<div class="roomNumPlanPage">
+    <div class="page-header">
+    </div><!-- /.page-header -->
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-12 col-sm-11">
+                    <div class="row">
+                        <img src="../assets/images/index-RoomNum-Page.JPG" style="width: 100%; height: auto;" />
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-1">
+                    <div class="row">
+                        <div class="right-menu-co">
+                            <ul>
+                                <!--<li class="icon-co-01">-->
+                                <li>
+                                    <!--<img src="../assets/images/icon/14.png" />-->
+                                    <a href="reservation-01.html">
+                                        <div class="icon-co-14"></div>
+                                    </a>
+                                    <span>訂房</span>
+                                </li>
+                                <li>
+                                    <!-- 圖片 -->
+                                    <!--<a href="#index-RoomNum-modal-01" data-toggle="modal" style="cursor: pointer;">-->
+                                    <!--<div class="icon-co-14"></div>-->
+                                    <!--</a>-->
+                                    <a href="#" id="roomNumModal01">
+                                        <div class="icon-co-14"></div>
+                                    </a>
+                                    <span>明細</span>
+                                </li>
+                                <li>
+                                    <!--href="#index-RoomNum-modal-02"-->
+                                    <a href="#" id="roomNumModal02">
+                                        <div class="icon-co-14"></div>
+                                    </a>
+                                    <span>房種</span>
+                                </li>
+                                <li>
+                                    <div class="icon-co-14"></div>
+                                    <span>上一頁</span>
+                                </li>
+                                <li>
+                                    <div class="icon-co-14"></div>
+                                    <span>下一頁</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- include reservationBtn.html -->
+    <div class="reservationBtn-popPage">
+
+    </div>
+</div><!-- /.roomNumPlanPage -->
+
+
+
+<!-- page specific plugin scripts -->
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+    $(function () {
+        var demo, fixedTable;
+
+        fixedTable = function (el) {
+            var $body, $header, $sidebar;
+            $body = $(el).find('.fixedTable-body');
+            $sidebar = $(el).find('.fixedTable-sidebar table');
+            $header = $(el).find('.fixedTable-header table');
+            return $($body).scroll(function () {
+                $($sidebar).css('margin-top', -$($body).scrollTop());
+                return $($header).css('margin-left', -$($body).scrollLeft());
+            });
+        };
+
+        demo = new fixedTable($('#demo'));
+
+
+
+        // jquery彈出視窗
+        //override dialog's title function to allow for HTML titles
+        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+            _title: function (title) {
+                var $title = this.options.title || '&nbsp;'
+                if (("title_html" in this.options) && this.options.title_html == true)
+                    title.html($title);
+                else title.text($title);
+            }
+        }));
+
+
+        // 彈出roomNumModal01 Dialog
+        $(document).on('click',"#roomNumModal01",function (e) {
+            e.preventDefault();
+            var dialog = $("#roomNumModal01-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>明細</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+
+        // 彈出roomNumModal02 Dialog
+        $(document).on('click',"#roomNumModal02",function (e) {
+            e.preventDefault();
+            var dialog = $("#roomNumModal02-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>房種</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+        // 彈出roomNumModal02 table
+        $('#myTable01').fixedHeaderTable({
+            altClass: 'odd',
+            footer: true,
+            fixedColumns:0
+        });
+        // roomNumModal01 roomNumModal02
+        $(".reservationBtn-popPage").load("reservationBtn.html");
+    });
+
+</script>
+
+

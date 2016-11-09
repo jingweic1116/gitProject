@@ -1,0 +1,111 @@
+<div class="roomTypePlanPage">
+    <div class="page-header">
+
+    </div><!-- /.page-header -->
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-12 col-sm-11">
+                    <div class="row">
+                        <a href="#">
+                            <img src="../assets/images/indexMain02.jpg" style="width: 100%; height: auto;"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-1">
+                    <div class="row">
+                        <div class="right-menu-co">
+                            <ul>
+                                <!--<li class="icon-co-01">-->
+                                <li>
+                                    <!--<img src="../assets/images/icon/14.png" />-->
+
+                                    <a href="#" id="reservationDialog">
+                                        <div class="icon-co-14"></div>
+                                    </a>
+                                    <span>訂房</span>
+
+                                </li>
+                                <li>
+                                    <div class="icon-co-10"></div>
+                                    <span>列印</span>
+                                </li>
+                                <li>
+                                    <div class="icon-co-03"></div>
+                                    <span>另存</span>
+                                </li>
+                                <li>
+                                    <div class="icon-co-14"></div>
+                                    <span>上一頁</span>
+                                </li>
+                                <li>
+                                    <div class="icon-co-14"></div>
+                                    <span>下一頁</span>
+                                </li>
+                                <li>
+                                    <a href="reservationRateCode.html">
+                                        <div class="icon-co-14"></div>
+                                    </a>
+                                    <span>專案訂房</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /.roomTypePlanPage -->
+
+
+<!-- include reservationBtn.html -->
+<div class="reservationBtn-popPage">
+
+</div>
+
+<script type="text/javascript">
+    jQuery(function ($) {
+// jquery彈出視窗
+//override dialog's title function to allow for HTML titles
+        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+            _title: function (title) {
+                var $title = this.options.title || '&nbsp;'
+                if (("title_html" in this.options) && this.options.title_html == true)
+                    title.html($title);
+                else title.text($title);
+            }
+        }));
+
+        // 彈出reservationDialog
+        $(document).on('click', "#reservationDialog", function (e) {
+            e.preventDefault();
+            var dialog = $("#reservationDialog-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>Reservation</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+        // profile
+        $(".reservationBtn-popPage").load("reservationBtn.html");
+
+        $(document).on('click', "#reservationDialogProfile", function (e) {
+            e.preventDefault();
+            var dialog = $("#reservationDialogProfile-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>住客歷史維護</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+    });
+</script>
