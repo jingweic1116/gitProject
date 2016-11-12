@@ -1,0 +1,98 @@
+
+<div class="nightAudit">
+
+	<div class="page-header">
+	</div><!-- /.page-header -->
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="row">
+				<div class="col-xs-12 col-sm-11">
+					<div class="row">
+						<img src="../assets/images/night/05-06.JPG"  style="max-width: 100%;"/>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-1">
+					<div class="row">
+						<div class="right-menu-co">
+							<ul>
+								<!--<li class="icon-co-01">-->
+								<li>
+									<!--<img src="../assets/images/icon/14.png" />-->
+									<a href="#" id="night-05-06-btn-modal-01">
+										<div class="icon-co-14"></div>
+									</a>
+									<span>開關班檢查</span>
+								</li>
+								<li>
+									<div class="icon-co-10"></div>
+									<span>執行夜核</span>
+								</li>
+								<li>
+									<a href="#" id="night-05-06-btn-modal-02">
+										<div class="icon-co-03"></div>
+									</a>
+									<span>夜核日誌</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- /.nightAudit -->
+<!--開關班檢查　pop night-05-06-btn-modal-01-->
+<div id="night-05-06-btn-modal-01-message" class="hide center">
+	<a href="#" data-toggle="modal">
+		<img src="../assets/images/night/05-07.JPG" style="width: 100%;"/>
+	</a>
+</div><!-- /.night-05-06-btn-modal-01-message  -->
+
+<!--夜核日誌　pop night-05-06-btn-modal-02-->
+<div id="night-05-06-btn-modal-02-message" class="hide center">
+	<a href="#" data-toggle="modal">
+		<img src="../assets/images/night/right-05-04.JPG" style="width: 100%;"/>
+	</a>
+</div><!-- /.night-05-06-btn-modal-02-message  -->
+
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+	jQuery(function($) {
+		// jquery彈出視窗
+		//override dialog's title function to allow for HTML titles
+		$.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+			_title: function (title) {
+				var $title = this.options.title || '&nbsp;'
+				if (("title_html" in this.options) && this.options.title_html == true)
+					title.html($title);
+				else title.text($title);
+			}
+		}));
+
+		// 彈出night-05-06-btn-modal-01
+		$("#night-05-06-btn-modal-01").on('click', function (e) {
+			e.preventDefault();
+			var dialog = $("#night-05-06-btn-modal-01-message").removeClass('hide').dialog({
+				modal: true,
+				title: "<div class='widget-header widget-header-small'><h4 class='smaller'>開關班</h4></div>",
+				title_html: true,
+				width: 1000,
+				maxWidth: 1920
+			});
+		});
+		// 彈出night-05-06-btn-modal-02
+		$("#night-05-06-btn-modal-02").on('click', function (e) {
+			e.preventDefault();
+			var dialog = $("#night-05-06-btn-modal-02-message").removeClass('hide').dialog({
+				modal: true,
+				title: "<div class='widget-header widget-header-small'><h4 class='smaller'>夜核日誌</h4></div>",
+				title_html: true,
+				width: 1000,
+				maxWidth: 1920
+			});
+		});
+	});
+</script>
+
+

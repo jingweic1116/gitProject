@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
-    <title>依房型訂房 / PMS系統 / 美麗信花園大酒店</title>
+    <title>美麗信花園大酒店</title>
 
     <meta name="description" content="overview &amp; stats"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
@@ -14,7 +14,14 @@
 
     <!-- page specific plugin styles -->
     <link rel="stylesheet" href="../components/_mod/jquery-ui/jquery-ui.css"/>
-    <link rel="stylesheet" href="../assets/css/bacchus.css" />
+    <link rel="stylesheet" href="../components/_mod/jqgrid/ui.jqgrid.css"/>
+
+    <link href="../assets/css/theme/960.css" rel="stylesheet" media="screen"/>
+    <link href="../assets/css/theme/defaultTheme.css" rel="stylesheet" media="screen"/>
+    <link href="../assets/css/theme/myTheme.css" rel="stylesheet" media="screen"/>
+    <link rel="stylesheet" href="../assets/css/table.css"/>
+
+    <link rel="stylesheet" href="../assets/css/bacchus.css"/>
 
     <!-- text fonts -->
     <link rel="stylesheet" href="../assets/css/ace-fonts.css"/>
@@ -31,10 +38,6 @@
     <!--[if lte IE 9]>
     <link rel="stylesheet" href="../assets/css/ace-ie.css"/>
     <![endif]-->
-    <link href="../assets/css/theme/960.css" rel="stylesheet" media="screen" />
-    <link href="../assets/css/theme/defaultTheme.css" rel="stylesheet" media="screen" />
-    <link href="../assets/css/theme/myTheme.css" rel="stylesheet" media="screen" />
-    <link rel="stylesheet" href="../assets/css/table.css"/>
     <link rel="stylesheet" href="../assets/css/style.css"/>
     <!-- inline styles related to this page -->
 
@@ -110,12 +113,11 @@
         <ul class="nav nav-list">
             <li>
 						<span class="input-icon companyInfo">
-							<input type="text" placeholder="關鍵字查詢" class="nav-search-input" autocomplete="off"
-                                   style="padding: 5px 0 6px 5px; margin-bottom: 1px;"/>
+							<input type="text" placeholder="關鍵字查詢" class="nav-search-input"  autocomplete="off" style="padding: 5px 0 6px 5px; margin-bottom: 1px;" />
 						</span>
                 <i class="ace-icon fa fa-search nav-search-icon"></i>
             </li>
-            <li class="active">
+            <li class="#">
                 <a href="#">
                     <i class="menu-icon fa fa-tachometer"></i>
                     <span class="menu-text"> PMS管理 </span>
@@ -128,7 +130,7 @@
                 <a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-desktop"></i>
 							<span class="menu-text">
-								訂房作業
+								出納作業
 							</span>
 
                     <b class="arrow fa fa-angle-down"></b>
@@ -138,10 +140,9 @@
 
                 <ul class="submenu">
                     <li class="">
-                        <!--<a href="indexMain.html" target="_blank" class="dropdown-toggle"> dropdown-toggle 在下拉一層-->
-                        <a href="reservation-query.html" target="_blank">
+                        <a href="cashier-right-01-1.html" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房查詢
+                            住客帳維護
                             <!--<b class="arrow fa fa-angle-down"></b>-->
                         </a>
 
@@ -150,22 +151,20 @@
                     </li>
 
                     <li class="">
-                        <a href="reservationRateCode.html" target="_blank">
+                        <a href="cashier-right-01-1.html" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            專案訂房
+                            團體管理
                         </a>
 
                         <b class="arrow"></b>
                     </li>
-
-
                 </ul>
             </li>
 
-            <li class="">
+            <li class="#">
                 <a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-list"></i>
-                    <span class="menu-text"> 訂房其他作業 </span>
+                    <span class="menu-text"> 出納其他作業 </span>
 
                     <b class="arrow fa fa-angle-down"></b>
                 </a>
@@ -174,57 +173,33 @@
 
                 <ul class="submenu">
                     <li class="">
-                        <a href="blockSetting.html" target="_blank">
+                        <a href="cashier-right-01-1.html" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            鎖控設定
+                            外幣匯兌
                         </a>
 
                         <b class="arrow"></b>
                     </li>
 
-                    <li class="">
-                        <a href="index-overBooking.html" target="_blank">
+                    <li class="#">
+                        <a href="cashier-right-01-1.html" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            超訂設定
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="inhouseQueryOld.html" target="_blank">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            住客資料維護
+                            開關班
                         </a>
 
                         <b class="arrow"></b>
                     </li>
 
-                    <li class="">
-                        <a href="guest_inquiry.html" target="_blank">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            住客查詢
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="hotelRentalItems.html" target="_blank">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            櫃台備品庫存查詢
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
 
                 </ul>
             </li>
+
 
 
             <li class="">
                 <a href="#" class="dropdown-toggle">
                     <i class="menu-icon fa fa-pencil-square-o"></i>
-                    <span class="menu-text"> 訂房報告-預估分析 </span>
+                    <span class="menu-text"> 出納報表 </span>
 
                     <b class="arrow fa fa-angle-down"></b>
                 </a>
@@ -235,7 +210,7 @@
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房預估報表(依類別)
+                            交班日報表
                         </a>
 
                         <b class="arrow"></b>
@@ -244,7 +219,7 @@
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房預估報表(依月份)
+                            交班明細表
                         </a>
 
                         <b class="arrow"></b>
@@ -253,7 +228,7 @@
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房預估報表(依房種)
+                            轉帳明細表
                         </a>
 
                         <b class="arrow"></b>
@@ -262,7 +237,7 @@
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房預估報表(依參數)
+                            調整明細表
                         </a>
 
                         <b class="arrow"></b>
@@ -271,111 +246,179 @@
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房數量異動折線圖
+                            消費明細表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            預期訂房報表
+                            拆帳日報表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房取消及候補報表
+                            催帳日報表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房確認數統計表
+                            預收款明細表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房銷售分析報表
+                            已沖銷明細表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            房間銷售狀況預估報表
+                            未沖銷明細表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            房間銷售狀況預估年報表
+                            房價稽核表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            房種空房數月報表
+                            轉帳明細表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            業務員未來訂房報表
+                            發票開立明細表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            業務員未來訂房產能比較表
+                            付款方式明細表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            簽約公司未來訂房報表
+                            FOC入帳明細表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房預估報表(依類別)-房間大類
+                            佣金費用明細表
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            訂房預估報表(依房種)-房間大類
+                            客戶簽帳表(明細統計)
                         </a>
 
                         <b class="arrow"></b>
                     </li>
+
                     <li class="">
                         <a href="#">
                             <i class="menu-icon fa fa-caret-right"></i>
-                            房間銷售狀況預估年表-房間大類
+                            員工簽帳表(明細統計)
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
+
+                    <li class="">
+                        <a href="#">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            部門簽帳表(明細統計)
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
+                    <li class="">
+                        <a href="#">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            出納信用卡預刷明細表
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
+                    <li class="">
+                        <a href="#">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            InHouse班報表(小分類)
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
+                    <li class="">
+                        <a href="#">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            客房未收帳款餘額明細表
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
+                    <li class="">
+                        <a href="#">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            前檯與服務廳拆收入報表
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
+                    <li class="">
+                        <a href="#">
+                            <i class="menu-icon fa fa-caret-right"></i>
+                            平版作業帳單影像資料查詢
                         </a>
 
                         <b class="arrow"></b>
@@ -383,183 +426,7 @@
                 </ul>
             </li>
 
-            <li class="">
-                <a href="#" class="dropdown-toggle">
-                    <i class="menu-icon fa fa-pencil-square-o"></i>
-                    <span class="menu-text"> 訂房報表-實際分析 </span>
 
-                    <b class="arrow fa fa-angle-down"></b>
-                </a>
-
-                <b class="arrow"></b>
-
-                <ul class="submenu">
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            當日新增訂房報表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            當日取消訂房報表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            NO-SHOW報表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            旅客來源統計表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            國籍分析統計表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Rate Code統計表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Rate Code 產值統計表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            年齡層報表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            旅客性別報表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            旅客停留天數分析表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            訂房與入住差異天數報表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Market Segment 分析報表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            訂房取消原因統計表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            鎖控明細報表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            房價設定一覽表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            在店房間數量表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            訂金催收報表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            訂房狀態報表
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            訂房確認書
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <i class="menu-icon fa fa-caret-right"></i>
-                            Change Log
-                        </a>
-
-                        <b class="arrow"></b>
-                    </li>
-                </ul>
-            </li>
 
         </ul><!-- /.nav-list -->
 
@@ -578,67 +445,61 @@
     <div class="main-content">
         <div class="main-content-inner">
             <!-- #section:basics/content.top-sec-ul -->
-            <div class="row top-sec-ul breadcrumbs-fixed" style="background: #F5F5F5;">
-                <div class="col-xs-12">
-                    <div class="top-ul">
-                        <ul>
-                            <a href="indexMain.html" class="active-01">
-                                <li> 訂房</li>
-                            </a>
-                            <a href="reception.html">
-                                <li>接待</li>
-                            </a>
-                            <a href="cashier.html ">
-                                <li>出納</li>
-                            </a>
-                            <a href="houseKeeping.html">
-                                <li>房務</li>
-                            </a>
-                            <a href="night.html">
-                                <li>夜核</li>
-                            </a>
-                            <a href="business.html">
-                                <li>業務</li>
-                            </a>
-                            <a href="report.html">
-                                <li>報表</li>
-                            </a>
-                            <a href="setting.html">
-                                <li>設定</li>
-                            </a>
-                            <a href="customMenus.html">
-                                <li>自訂</li>
-                            </a>
-                        </ul>
-                    </div> <!-- /.top-ul -->
-                    <div class="secondMenu-ul secondMenuClick">
-                        <ul>
-                            <li value="roomTypePlan"><img src="../assets/images/icon/bed.png " class="icon-2-style"/>依房型訂房</li>
+            <div class="col-xs-12 top-sec-ul breadcrumbs-fixed">
 
-                            <li value="roomNumPlan"><img src="../assets/images/icon/bed.png " class="icon-2-style"/>依房號訂房</li>
+                <div class="top-ul">
+                    <ul>
+                        <a href="manageReservation.html">
+                            <li> 訂房</li>
+                        </a>
+                        <a href="manageReception.html">
+                            <li>接待</li>
+                        </a>
+                        <a href="manageCashier.html" class="active-01">
+                            <li>出納</li>
+                        </a>
+                        <a href="manageHouseKeeping.html">
+                            <li>房務</li>
+                        </a>
+                        <a href="manageNight.html">
+                            <li>夜核</li>
+                        </a>
+                        <a href="manageBusiness.html">
+                            <li>業務</li>
+                        </a>
+                        <a href="manageReport.html">
+                            <li>報表</li>
+                        </a>
+                        <a href="manageSetting.html">
+                            <li>設定</li>
+                        </a>
+                        <a href="manageCustomMenus.html">
+                            <li>自訂</li>
+                        </a>
+                    </ul>
+                </div> <!-- /.top-ul -->
 
-                            <li value="checkInList"><img src="../assets/images/icon/bed.png " class="icon-2-style"/>CI清單</li>
+                <div class="secondMenu-ul secondMenuClick">
+                    <ul>
+                            <li value="floorPlan"><img src="../assets/images/icon/bed.png " class="icon-2-style">綜合櫃台</li>
 
-                            <li value="checkOutList"><img src="../assets/images/icon/bed.png " class="icon-2-style"/>CO清單</li>
+                            <li value="guestAccount"><img src="../assets/images/icon/bed.png " class="icon-2-style">住客帳維護</li>
 
-                            <li value="floorPlan"><img src="../assets/images/icon/bed.png " class="icon-2-style"/>綜合櫃台</li>
+                            <li value="inHouseQuery"><img src="../assets/images/icon/bed.png " class="icon-2-style">住客查詢</li>
 
-                            <li value="group"><img src="../assets/images/icon/bed.png " class="icon-2-style"/>團體清單</li>
+                            <li value="reservationQuery"><img src="../assets/images/icon/bed.png " class="icon-2-style">訂房查詢</li>
 
-                            <li value="inHouseQuery"><img src="../assets/images/icon/bed.png " class="icon-2-style"/>住客查詢</li>
+                            <li value="group"><img src="../assets/images/icon/bed.png " class="icon-2-style">團體管理</li>
 
-                            <li value="roomAssign"><img src="../assets/images/icon/bed.png " class="icon-2-style"/>排房作業</li>
+                            <li value="trace"><img src="../assets/images/icon/bed.png " class="icon-2-style">交辦事項</li>
 
-                            <li value="trace"><img src="../assets/images/icon/bed.png " class="icon-2-style"/>交辦事項</li>
+                    </ul>
+                </div>
+                <!-- /.secondMenu-ul -->
 
-                        </ul>
-                    </div> <!-- /.secondMenuUl -->
+            </div><!-- /.top-sec-ul -->
 
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-            <!--<div class="secondMenu-ul secondMenu-ul-fixed" style="position: fixed;top:100px; right: 0; left: 200px;  z-index: 1024;">-->
-            <!--<div id="reservationManage-load">-->
-            <div id="reservationManage-load" class="page-content">
+            <div id="manageCasher-load" class="page-content">
 
             </div><!-- /.page-content -->
         </div>
@@ -648,9 +509,11 @@
         <div class="footer-inner">
             <!-- #section:basics/footer -->
             <div class="footer-content   footer-color">
-                <span class="bigger-120">
-                    Athena Information Systems
-                </span>
+						<span class="bigger-120">
+
+							Athena Information Systems
+						</span>
+
             </div>
 
             <!-- /section:basics/footer -->
@@ -685,6 +548,11 @@
 <!-- page specific plugin scripts -->
 <script src="../components/jquery-ui/jquery-ui.js"></script>
 <script src="../components/jqueryui-touch-punch/jquery.ui.touch-punch.js"></script>
+<!-- page specific part02 -->
+<script src="../components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+<script src="../components/jqGrid/js/jquery.jqGrid.js"></script>
+<script src="../components/jqGrid/js/i18n/grid.locale-en.js"></script>
+
 
 <!-- ace scripts -->
 <script src="../assets/js/src/elements.scroller.js"></script>
@@ -714,47 +582,6 @@
 <!-- inline scripts related to this page -->
 <script type="text/javascript">
     jQuery(function ($) {
-// jquery彈出視窗
-//override dialog's title function to allow for HTML titles
-        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
-            _title: function (title) {
-                var $title = this.options.title || '&nbsp;'
-                if (("title_html" in this.options) && this.options.title_html == true)
-                    title.html($title);
-                else title.text($title);
-            }
-        }));
-
-        // 彈出reservationDialog
-        $(document).on('click',"#reservationDialog",function (e) {
-            e.preventDefault();
-            var dialog = $("#reservationDialog-message").removeClass('hide').dialog({
-                modal: true,
-                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>Reservation</h4></div>",
-                title_html: true,
-                width: 1000,
-                maxwidth: 1920,
-//                autoOpen: true,
-                dialogClass: "test",
-                responsive: true
-            });
-        });
-        // profile
-        $(".reservationBtn-popPage").load("reservationBtn.html");
-
-        $(document).on('click',"#reservationDialogProfile",function (e) {
-            e.preventDefault();
-            var dialog = $("#reservationDialogProfile-message").removeClass('hide').dialog({
-                modal: true,
-                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>住客歷史維護</h4></div>",
-                title_html: true,
-                width: 1000,
-                maxwidth: 1920,
-//                autoOpen: true,
-                dialogClass: "test",
-                responsive: true
-            });
-        });
     });
 </script>
 
