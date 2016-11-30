@@ -37,6 +37,7 @@ body{
 }
 
 .btn90px{width:90px;}
+.btn100p{width:100%;}
 .width1{width:1%;}
 .width2{width:2%;}
 .width3{width:3%;}
@@ -467,4 +468,33 @@ select {
 	height:400px; 
 	margin-top:20px;
 	padding-left:10px;
+}
+
+/*C/I*/
+.cibtn button {
+    margin-bottom:5px; 
+}
+
+.cipanel  > div {
+    margin-top:5px;    
+}
+
+.citable-scroll{
+	width:100%;
+	overflow-x: auto; 
+    margin-top:10px;    
+}
+
+.citable-scroll-table{
+	overflow-x: auto; 
+}
+
+.citable-scroll-table th{
+	border-color: #ddd;
+    font-weight: bold;
+	padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid #ddd;
 }
