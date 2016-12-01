@@ -1373,25 +1373,25 @@
                         <div class="right-menu-co">
                             <ul>
                                 <li>
-                                    <a href="#ci-modal-01" data-toggle="modal" style="cursor: pointer;">
+                                    <a class="ci-modal01">
                                         <div class="icon-co-10"></div>
                                     </a>
                                     <span>C/I</span>
                                 </li>
                                 <li>
-                                    <a href="#ci-modal-02" data-toggle="modal" style="cursor: pointer;">
+                                    <a  class="ci-modal02">
                                         <div class="icon-co-03"></div>
                                     </a>
                                     <span>C/I Cancel</span>
                                 </li>
                                 <li>
-                                    <a href="#ci-modal-02" data-toggle="modal" style="cursor: pointer;">
+                                    <a  class="ci-modal03">
                                         <div class="icon-co-03"></div>
                                     </a>
                                     <span>排房</span>
                                 </li>
                                 <li>
-                                    <a href="#ci-modal-02" data-toggle="modal" style="cursor: pointer;">
+                                    <a  class="ci-modal04">
                                         <div class="icon-co-03"></div>
                                     </a>
                                     <span>修改排房</span>
@@ -1446,6 +1446,8 @@
 
     </div>
 
+    <!-- popPage -->
+    <div class="btnCheckIn-popPage"></div>
 </div><!-- /.page-content -->
 
 
@@ -1455,5 +1457,66 @@
     jQuery(function ($) {
         $('[data-rel=tooltip]').tooltip();
         $('[data-rel=popover]').popover({html: true});
+
+        $(".btnCheckIn-popPage").load("btnCheckIn.html");
+        // ci-modal01
+        $(document).on('click', ".ci-modal01", function (e) {
+            e.preventDefault();
+            var dialog = $("#ci-modal01-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+
+        // ci-modal02
+        $(document).on('click', ".ci-modal02", function (e) {
+            e.preventDefault();
+            var dialog = $("#ci-modal02-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+
+        // ci-modal03
+        $(document).on('click', ".ci-modal03", function (e) {
+            e.preventDefault();
+            var dialog = $("#ci-modal03-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+
+        // ci-modal04
+        $(document).on('click', ".ci-modal04", function (e) {
+            e.preventDefault();
+            var dialog = $("#ci-modal04-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
     });
 </script>
