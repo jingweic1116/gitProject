@@ -696,42 +696,44 @@
                         <ul>
 
                             <li>
-                                <a href="#co-btn-modal-01" data-toggle="modal" style="cursor: pointer;">
-                                    <div class="icon-co-14"></div>
+                                <a class="co-modal01">
+                                    <div class="icon-co-10"></div>
                                 </a>
                                 <span>開立現金帳</span>
                             </li>
                             <li>
-                                <a href="#co-btn-modal-02" data-toggle="modal" style="cursor: pointer;">
-                                    <div class="icon-co-14"></div>
+                                <a class="co-modal02">
+                                    <div class="icon-co-10"></div>
                                 </a>
                                 <span>旅客明細帳</span>
                             </li>
                             <li>
-                                <a href="#co-btn-modal-03" data-toggle="modal" style="cursor: pointer;">
-                                    <div class="icon-co-14"></div>
+                                <a class="co-modal03">
+                                    <div class="icon-co-10"></div>
                                 </a>
                                 <span>團體明細</span>
                             </li>
                             <li>
-                                <a href="#co-btn-modal-04" data-toggle="modal" style="cursor: pointer;">
-                                    <div class="icon-co-14"></div>
+                                <a class="co-modal04">
+                                    <div class="icon-co-10"></div>
                                 </a>
                                 <span>改C/O日期</span>
                             </li>
                             <li>
-                                <div class="icon-co-14"></div>
+                                <a class="co-modal05">
+                                    <div class="icon-co-10"></div>
+                                </a>
                                 <span>儲值卡</span>
                             </li>
                             <li>
-                                <a href="#co-btn-modal-05" data-toggle="modal" style="cursor: pointer;">
-                                    <div class="icon-co-14"></div>
+                                <a class="co-modal06">
+                                    <div class="icon-co-10"></div>
                                 </a>
                                 <span>入帳</span>
                             </li>
                             <li>
-                                <a href="#co-btn-modal-06" data-toggle="modal" style="cursor: pointer;">
-                                    <div class="icon-co-14"></div>
+                                <a class="co-modal07">
+                                    <div class="icon-co-10"></div>
                                 </a>
                                 <span>房務入帳</span>
                             </li>
@@ -743,7 +745,7 @@
 
 
     </div> <!-- /.col-xs-12 -->
-
+<div class="btnCheckOut-popPage"></div>
 </div><!-- /.checkOutList -->
 <!--co-madal-01 到 co-madal-12 為表格第一行跳出的流程-->
 <div id="co-modal-01" class="modal fade" tabindex="-1">
@@ -1175,6 +1177,106 @@
 
         //make content sliders resizable using jQuery UI (you should include jquery ui files)
         //$('#right-menu > .modal-dialog').resizable({handles: "w", grid: [ 20, 0 ], minWidth: 200, maxWidth: 600});
+
+        $(".btnCheckOut-popPage").load("btnCheckOut.html");
+        // co-modal01
+        $(document).on('click', ".co-modal01", function (e) {
+            e.preventDefault();
+            var dialog = $("#co-modal01-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+        // co-modal02
+        $(document).on('click', ".co-modal02", function (e) {
+            e.preventDefault();
+            var dialog = $("#co-modal02-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+        // co-modal03
+        $(document).on('click', ".co-modal03", function (e) {
+            e.preventDefault();
+            var dialog = $("#co-modal03-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+        // co-modal04
+        $(document).on('click', ".co-modal04", function (e) {
+            e.preventDefault();
+            var dialog = $("#co-modal04-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+        // co-modal05
+        $(document).on('click', ".co-modal05", function (e) {
+            e.preventDefault();
+            var dialog = $("#co-modal05-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+        // co-modal06
+        $(document).on('click', ".co-modal06", function (e) {
+            e.preventDefault();
+            var dialog = $("#co-modal06-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
+        // co-modal07
+        $(document).on('click', ".co-modal07", function (e) {
+            e.preventDefault();
+            var dialog = $("#co-modal07-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>單筆</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+//                autoOpen: true,
+                dialogClass: "test",
+                responsive: true
+            });
+        });
     })
 </script>
 
