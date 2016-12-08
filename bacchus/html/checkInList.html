@@ -1379,7 +1379,7 @@
                                     <span>C/I</span>
                                 </li>
                                 <li>
-                                    <a  class="ci-modal02">
+                                    <a class="ci-modal02">
                                         <div class="icon-co-03"></div>
                                     </a>
                                     <span>C/I Cancel</span>
@@ -1405,46 +1405,6 @@
         </div>
     </div><!-- /.col-xs-12 -->
 
-    <!--modal-->
-    <div id="ci-modal-01" class="modal fade" tabindex="-1">
-        <div class="modal-dialog modal-dialog-fullScreen-blockSet" style="max-width: 100%; ">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"
-                            aria-hidden="true">&times;</button>
-                    <!--<h3 class="smaller lighter blue no-margin">應收總合計:4500</h3>-->
-                </div>
-
-                <div class="modal-body">
-                    <a href="#" data-toggle="modal">
-                        <img id="#" src="../assets/images/ci-pop.png" style="max-width: 100%;"/>
-                    </a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-
-
-    </div>
-
-    <div id="ci-modal-02" class="modal fade" tabindex="-1">
-        <div class="modal-dialog modal-dialog-fullScreen-blockSet" style="max-width: 100%; ">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"
-                            aria-hidden="true">&times;</button>
-                    <!--<h3 class="smaller lighter blue no-margin">應收總合計:4500</h3>-->
-                </div>
-
-                <div class="modal-body">
-                    <a href="#" data-toggle="modal">
-                        <img id="" src="../assets/images/cICancel-pop.png" style="max-width: 100%;"/>
-                    </a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-
-
-    </div>
 
     <!-- popPage -->
     <div class="btnCheckIn-popPage"></div>
@@ -1459,6 +1419,18 @@
         $('[data-rel=popover]').popover({html: true});
 
         $(".btnCheckIn-popPage").load("btnCheckIn.html");
+
+        // jquery彈出視窗
+        //override dialog's title function to allow for HTML titles
+        $.widget("ui.dialog", $.extend({}, $.ui.dialog.prototype, {
+            _title: function (title) {
+                var $title = this.options.title || '&nbsp;'
+                if (("title_html" in this.options) && this.options.title_html == true)
+                    title.html($title);
+                else title.text($title);
+            }
+        }));
+
         // ci-modal01
         $(document).on('click', ".ci-modal01", function (e) {
             e.preventDefault();
