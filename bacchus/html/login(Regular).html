@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>登入-美麗信花園大酒店</title>
+
+		<link rel="stylesheet" href="../assets/css/login-regular.css" />
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body class="login-bg">
+		<div class="loginPage">
+			<div class="logoCompany">
+				<img src="../assets/images/athena_logo.png" />
+			</div>
+			<div class="space-6"></div>
+			<div class="container">
+				<div class="title">
+					<!--icon-->
+					<span>登入</span>
+				</div>
+				<div class="main">
+					<form>
+						<div>
+							<input type="text" placeholder="使用者" class="form-control" />
+						</div>
+
+						<div>
+							<input type="password" placeholder="密碼" class="form-control" />
+						</div>
+
+						<div>
+							<select class="form-control">
+								<option value="0">資料庫</option>
+								<option value="volvo">Volvo</option>
+								<option value="saab">Saab</option>
+								<option value="mercedes">Mercedes</option>
+								<option value="audi">Audi</option>
+							</select>
+						</div>
+
+						<div>
+							<select class="form-control">
+								<option value="0">公司</option>
+								<option value="volvo">Volvo</option>
+								<option value="saab">Saab</option>
+								<option value="mercedes">Mercedes</option>
+								<option value="audi">Audi</option>
+							</select>
+						</div>
+
+						<div>
+							<input type="text" class="form-control width-50" placeholder="輸入驗證碼" />
+
+							<span class="v_codes">
+								<img src="../assets/images/codes.jpg" />
+							</span>
+						</div>
+
+						<div class="mainCheck">
+							<label class="inline">
+								<input type="checkbox" class="ace" />
+								<span class="lbl"> 記住我</span>
+							</label>
+
+							<button type="button" class="width-35 pull-right btn btn-sm btn-primary">
+								<span class="bigger-110 bold">登入</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="toolbar">
+				<div>
+					<a href="#" data-target="#forgot-box" class="forgot-password-link">
+						忘記密碼
+					</a>
+				</div>
+
+			</div>
+			<!-- 語言 -->
+			<div class="navbar-fixed-top align-right lang">
+				<!--<select onchange="javascript:handleSelect(this)">-->
+				<select>
+					<option value="-1">選擇語言</option>
+					<option value="login_tw.html">繁體中文</option>
+					<option value="login.html">English</option>
+				</select>
+			</div>
+		</div>
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* line 2, ../sass/login-regular.sass */
+body {
+  font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*-------- login.html -------- */
+/* line 7, ../sass/login-regular.sass */
+.space-6 {
+  max-height: 1px;
+  min-height: 1px;
+  overflow: hidden;
+  margin: 6px 0 5px;
+}
+
+/* line 12, ../sass/login-regular.sass */
+.btn {
+  font-family: Microsoft JhengHei, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  color: #FFF;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-image: none;
+  border: 5px solid #FFF;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;
+  -o-transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;
+  transition: background-color 0.15s, border-color 0.15s, opacity 0.15s;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  padding: 4px 9px;
+  position: relative;
+}
+
+/* line 29, ../sass/login-regular.sass */
+.btn-primary, .btn-primary:focus, .btn-primary.focus {
+  background-color: #428BCA;
+  border-color: #428BCA;
+}
+
+/* line 32, ../sass/login-regular.sass */
+.btn-primary:hover {
+  color: #fff;
+  background-color: #1B6AAA;
+  border-color: #428BCA;
+}
+
+/* line 36, ../sass/login-regular.sass */
+.pull-right {
+  float: right;
+}
+
+/* line 38, ../sass/login-regular.sass */
+.width-35 {
+  width: 35%;
+}
+
+/* line 40, ../sass/login-regular.sass */
+.width-50 {
+  width: 50% !important;
+}
+
+/* line 42, ../sass/login-regular.sass */
+.bold {
+  font-weight: bold;
+}
+
+/* line 44, ../sass/login-regular.sass */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 48, ../sass/login-regular.sass */
+.loginPage {
+  margin: 0 auto;
+  text-align: center;
+  width: 375px;
+}
+/* line 52, ../sass/login-regular.sass */
+.loginPage .logoCompany {
+  margin: 30px 0 0 0;
+}
+/* line 54, ../sass/login-regular.sass */
+.loginPage .logoCompany img {
+  width: 375px;
+  height: auto;
+}
+/* line 57, ../sass/login-regular.sass */
+.loginPage .container {
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  text-align: left;
+  padding: 16px 36px 36px;
+}
+/* line 63, ../sass/login-regular.sass */
+.loginPage .container .title {
+  color: #478FCA;
+  line-height: 28px;
+  margin-bottom: 16px;
+  margin-top: 18px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+}
+/* line 72, ../sass/login-regular.sass */
+.loginPage .container .main .form-control {
+  width: 100%;
+  border-radius: 0;
+  color: #858585;
+  background-color: #FFF;
+  border: 1px solid #D5D5D5;
+  padding: 5px 4px;
+  height: 34px;
+  box-sizing: border-box;
+  margin: 5px auto;
+}
+/* line 82, ../sass/login-regular.sass */
+.loginPage .container .main input[type=checkbox].ace + .lbl, .loginPage .container .main input[type=radio].ace + .lbl {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  line-height: 20px;
+  min-height: 18px;
+  min-width: 18px;
+  font-weight: normal;
+  cursor: pointer;
+}
+/* line 91, ../sass/login-regular.sass */
+.loginPage .container .main .mainCheck {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+/* line 94, ../sass/login-regular.sass */
+.loginPage .container .main .mainCheck .bigger-110 {
+  font-size: 110%;
+}
+/* line 96, ../sass/login-regular.sass */
+.loginPage .toolbar {
+  background: #5090C1;
+  border-top: 2px solid #597597;
+  height: 43px;
+  max-height: 100%;
+}
+/* line 101, ../sass/login-regular.sass */
+.loginPage .toolbar > div:first-child {
+  float: left;
+  text-align: left;
+}
+/* line 104, ../sass/login-regular.sass */
+.loginPage .toolbar > div {
+  width: 50%;
+  display: inline-block;
+  padding: 9px 0 11px 20px;
+}
+/* line 108, ../sass/login-regular.sass */
+.loginPage .toolbar .forgot-password-link {
+  color: #FE9;
+}
+/* line 110, ../sass/login-regular.sass */
+.loginPage .lang {
+  margin: 20px 20px 0 0;
+}
+/* line 112, ../sass/login-regular.sass */
+.loginPage .align-right {
+  text-align: right;
+}
+/* line 114, ../sass/login-regular.sass */
+.loginPage .navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  top: 0;
+  border-width: 0 0 1px;
+}
+/* line 121, ../sass/login-regular.sass */
+.loginPage .navbar-fixed-top select {
+  padding: 5px;
+}
+
+/*----- 驗證碼圖片 ----- */
+/* line 127, ../sass/login-regular.sass */
+.v_codes img {
+  margin: 10px 0 0 10px;
+  text-align: center;
+}
+
+/* line 130, ../sass/login-regular.sass */
+.errorTip {
+  color: #ff0000;
+}
+
+/* line 133, ../sass/login-regular.sass */
+.login-bg {
+  background: #DFE0E2 url(images/pattern.jpg) repeat;
+}

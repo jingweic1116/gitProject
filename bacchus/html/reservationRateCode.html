@@ -1,52 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta charset="utf-8"/>
-    <title>團體清單 / PMS系統 / 美麗信花園大酒店</title>
 
-    <meta name="description" content="overview &amp; stats"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<head id="extendFile">
+    <!--[if !IE]> -->
+    <script src="../components/jquery/dist/jquery.js"></script>
+    <!-- <![endif]-->
 
-    <!-- bootstrap & fontawesome -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../components/font-awesome/css/font-awesome.css"/>
-
-    <!-- page specific plugin styles -->
-    <link rel="stylesheet" href="../components/_mod/jquery-ui/jquery-ui.css"/>
-    <link rel="stylesheet" href="../components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css"/>
-    <link rel="stylesheet" href="../components/_mod/jqgrid/ui.jqgrid.css"/>
-
-    <!-- text fonts -->
-    <link rel="stylesheet" href="../assets/css/ace-fonts.css"/>
-
-    <!-- ace styles -->
-    <link rel="stylesheet" href="../assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style"/>
-
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="../assets/css/ace-part2.css" class="ace-main-stylesheet"/>
-    <![endif]-->
-    <link rel="stylesheet" href="../assets/css/ace-skins.css"/>
-    <link rel="stylesheet" href="../assets/css/ace-rtl.css"/>
-
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="../assets/css/ace-ie.css"/>
-    <![endif]-->
-    <link rel="stylesheet" href="../assets/css/style.css"/>
-    <!-- inline styles related to this page -->
-
-    <!-- ace settings handler -->
-    <script src="../assets/js/ace-extra.js"></script>
-
-    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
-
-    <!--[if lte IE 8]>
-    <script src="../components/html5shiv/dist/html5shiv.min.js"></script>
-    <script src="../components/respond/dest/respond.min.js"></script>
+    <!--[if IE]>
+    <script src="../components/jquery.1x/dist/jquery.js"></script>
     <![endif]-->
 </head>
 
+<script type="text/javascript">
+    $("#extendFile").load("./common/extendFile.html", function () {
+        $("body").show();
+    });
+</script>
+
 <body class="no-skin">
+
+<script type="text/javascript">
+    $("body").hide();
+</script>
 <!-- #section:basics/navbar.layout -->
 <div id="navbar" class="navbar navbar-default          ace-save-state navbar-fixed-top">
 
@@ -109,7 +84,8 @@
         <ul class="nav nav-list">
             <li>
 						<span class="input-icon companyInfo">
-							<input type="text" placeholder="關鍵字查詢" class="nav-search-input"  autocomplete="off" style="padding: 5px 0 6px 5px; margin-bottom: 1px;" />
+							<input type="text" placeholder="關鍵字查詢" class="nav-search-input" autocomplete="off"
+                                   style="padding: 5px 0 6px 5px; margin-bottom: 1px;"/>
 						</span>
                 <i class="ace-icon fa fa-search nav-search-icon"></i>
             </li>
@@ -136,7 +112,7 @@
 
                 <ul class="submenu">
                     <li class="">
-                        <!--<a href="indexMain.html" target="_blank" class="dropdown-toggle"> dropdown-toggle 在下拉一層-->
+                        <!--<a href="manageReservation.html" target="_blank" class="dropdown-toggle"> dropdown-toggle 在下拉一層-->
                         <a href="reservation-query.html" target="_blank">
                             <i class="menu-icon fa fa-caret-right"></i>
                             訂房查詢
@@ -272,7 +248,6 @@
 
                 </ul>
             </li>
-
 
 
             <li class="">
@@ -636,7 +611,7 @@
                 <!--<div class="top-ul" style="position: fixed; right: 0; left: 200px; top: auto; z-index: 1024;">-->
                 <div class="top-ul ">
                     <ul>
-                        <a href="indexMain.html" class="active-01">
+                        <a href="manageReservation.html" class="active-01">
                             <li> 訂房</li>
                         </a>
                         <a href="reception.html">
@@ -670,7 +645,7 @@
 
                 <div class="secondMenu-ul">
                     <ul>
-                        <a href="indexMain.html">
+                        <a href="manageReservation.html">
                             <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>依房型訂房</li>
                         </a>
                         <a href="index-RoomNum.html">
@@ -752,7 +727,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="search-co-content col-xs-12 rece-search-detail" style="display: none;">
+                                        <div class="search-co-content col-xs-12 rece-search-detail"
+                                             style="display: none;">
                                             <div class="col-sm-4">
                                                 <div class="block-table">
                                                     <label>訂房公司</label>
@@ -827,7 +803,8 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-11">
                                     <div class="row">
-                                        <img src="../assets/images/reservationRateCode-01.png"  style="max-width: 100%;"/>
+                                        <img src="../assets/images/reservationRateCode-01.png"
+                                             style="max-width: 100%;"/>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-12 no-padding-left rateCode03-table">
@@ -845,7 +822,7 @@
                                                 <li>
                                                     <!--<img src="../assets/images/icon/14.png" />-->
                                                     <a href="reservation-01.html">
-                                                    <div class="icon-co-14"></div>
+                                                        <div class="icon-co-14"></div>
                                                     </a>
                                                     <span>訂房</span>
                                                 </li>
@@ -902,64 +879,15 @@
 
 <!-- basic scripts -->
 
-<!--[if !IE]> -->
-<script src="../components/jquery/dist/jquery.js"></script>
-
-<!-- <![endif]-->
-
-<!--[if IE]>
-<script src="../components/jquery.1x/dist/jquery.js"></script>
-<![endif]-->
-<!--myself affects 自己加的效果-->
-<script src="../assets/js/site.js"></script>
-<script src="../assets/js/include.js"></script>
-
-<script type="text/javascript">
-    if ('ontouchstart' in document.documentElement) document.write("<script src='../components/_mod/jquery.mobile.custom/jquery.mobile.custom.js'>" + "<" + "/script>");
-</script>
-<script src="../components/bootstrap/dist/js/bootstrap.js"></script>
-
-<!-- page specific plugin scripts -->
-<script src="../components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-<script src="../components/jqGrid/js/jquery.jqGrid.js"></script>
-<script src="../components/jqGrid/js/i18n/grid.locale-en.js"></script>
-
-
-<!-- ace scripts -->
-<script src="../assets/js/src/elements.scroller.js"></script>
-<script src="../assets/js/src/elements.colorpicker.js"></script>
-<script src="../assets/js/src/elements.fileinput.js"></script>
-<script src="../assets/js/src/elements.typeahead.js"></script>
-<script src="../assets/js/src/elements.wysiwyg.js"></script>
-<script src="../assets/js/src/elements.spinner.js"></script>
-<script src="../assets/js/src/elements.treeview.js"></script>
-<script src="../assets/js/src/elements.wizard.js"></script>
-<script src="../assets/js/src/elements.aside.js"></script>
-<script src="../assets/js/src/ace.js"></script>
-<script src="../assets/js/src/ace.basics.js"></script>
-<script src="../assets/js/src/ace.scrolltop.js"></script>
-<script src="../assets/js/src/ace.ajax-content.js"></script>
-<script src="../assets/js/src/ace.touch-drag.js"></script>
-<script src="../assets/js/src/ace.sidebar.js"></script>
-<script src="../assets/js/src/ace.sidebar-scroll-1.js"></script>
-<script src="../assets/js/src/ace.submenu-hover.js"></script>
-<script src="../assets/js/src/ace.widget-box.js"></script>
-<script src="../assets/js/src/ace.settings.js"></script>
-<script src="../assets/js/src/ace.settings-rtl.js"></script>
-<script src="../assets/js/src/ace.settings-skin.js"></script>
-<script src="../assets/js/src/ace.widget-on-reload.js"></script>
-<script src="../assets/js/src/ace.searchbox-autocomplete.js"></script>
-
 <!-- inline scripts related to this page -->
 <script type="text/javascript">
-    jQuery(function($) {
+    jQuery(function ($) {
         $('[data-rel=tooltip]').tooltip();
         $('[data-rel=popover]').popover({html: true});
     });
 
 
-
-//rateCode03
+    //rateCode03
     var rateCode03_data =
             [
                 {
@@ -976,22 +904,21 @@
                     adult: "2",
                     kid: "2",
                     baby: "0"
-                },{
-                    id: "G79",
-                    name: "9",
-                    note: "Rain chen",
-                    ciDate: "2016/08/17",
-                    coDate: "2016/08/22",
-                    day: "5",
-                    room: "3",
-                    price: "3540",
-                    service_price: "40",
-                    total: "3580",
-                    adult: "2",
-                    kid: "2",
-                    baby: "0"
-                }
-
+                }, {
+                id: "G79",
+                name: "9",
+                note: "Rain chen",
+                ciDate: "2016/08/17",
+                coDate: "2016/08/22",
+                day: "5",
+                room: "3",
+                price: "3540",
+                service_price: "40",
+                total: "3580",
+                adult: "2",
+                kid: "2",
+                baby: "0"
+            }
 
 
             ];
@@ -1397,19 +1324,6 @@
     });
 
 </script>
-
-<!-- the following scripts are used in demo only for onpage help and you don't need them -->
-<link rel="stylesheet" href="../assets/css/ace.onpage-help.css"/>
-<link rel="stylesheet" href="../docs/assets/js/themes/sunburst.css"/>
-
-<script type="text/javascript"> ace.vars['base'] = '..'; </script>
-<script src="../assets/js/src/elements.onpage-help.js"></script>
-<script src="../assets/js/src/ace.onpage-help.js"></script>
-<script src="../docs/assets/js/rainbow.js"></script>
-<script src="../docs/assets/js/language/generic.js"></script>
-<script src="../docs/assets/js/language/html.js"></script>
-<script src="../docs/assets/js/language/css.js"></script>
-<script src="../docs/assets/js/language/javascript.js"></script>
 
 
 </body>

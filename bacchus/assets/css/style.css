@@ -119,26 +119,31 @@ a {
   cursor: pointer;
 }
 
+/* line 50, ../sass/_public.sass */
+.blue-bg {
+  background: #0d67a0;
+}
+
 /* 共用區End */
-/* line 54, ../sass/_public.sass */
+/* line 56, ../sass/_public.sass */
 .btn-black {
   background-color: #555555;
   opacity: 0.8;
   color: #fff;
 }
-/* line 58, ../sass/_public.sass */
+/* line 60, ../sass/_public.sass */
 .btn-black:hover {
   opacity: 1;
   color: #fff;
 }
 
-/* line 61, ../sass/_public.sass */
+/* line 63, ../sass/_public.sass */
 .btnCustom {
   padding: 10px 25px;
   color: #fff;
   background: #6f51d2;
 }
-/* line 65, ../sass/_public.sass */
+/* line 67, ../sass/_public.sass */
 .btnCustom:hover, .btnCustom:focus {
   color: #fff;
   opacity: 0.8;
@@ -147,12 +152,12 @@ a {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 72, ../sass/_public.sass */
+/* line 74, ../sass/_public.sass */
 .btnCustom:hover i, .btnCustom:focus i {
   margin-left: 10px;
   transition: all 0.4s ease;
 }
-/* line 75, ../sass/_public.sass */
+/* line 77, ../sass/_public.sass */
 .btnCustom:active, .btnCustom.active {
   background: rgba(111, 81, 210, 0.5);
   color: #555555;
@@ -160,14 +165,14 @@ a {
   box-shadow: none;
 }
 
-/* line 81, ../sass/_public.sass */
+/* line 83, ../sass/_public.sass */
 .btnCustomTwo {
   padding: 6px 25px;
   color: #6f51d2;
   background: #fff;
   border: 1px solid #6f51d2;
 }
-/* line 86, ../sass/_public.sass */
+/* line 88, ../sass/_public.sass */
 .btnCustomTwo:hover, .btnCustomTwo:focus {
   color: #555555;
   font-weight: bold;
@@ -177,17 +182,22 @@ a {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 94, ../sass/_public.sass */
+/* line 96, ../sass/_public.sass */
 .btnCustomTwo:hover i, .btnCustomTwo:focus i {
   margin-left: 10px;
   transition: all 0.4s ease;
 }
-/* line 97, ../sass/_public.sass */
+/* line 99, ../sass/_public.sass */
 .btnCustomTwo:active, .btnCustomTwo.active {
   color: #555555;
   border: 1px solid rgba(111, 81, 210, 0.5);
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+/* line 105, ../sass/_public.sass */
+.cursorPointer {
+  cursor: pointer;
 }
 
 /* line 1, ../sass/right-menu.sass */
@@ -1397,6 +1407,82 @@ select.form-control {
   min-width: 100px;
   max-width: 100%;
   overflow: auto;
+}
+
+/* settingRole.html */
+/* line 686, ../sass/style.sass */
+.settingRole .choiceLine {
+  width: 10%;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 2px solid #0d67a0;
+}
+
+/* settingAccControl.html */
+/* line 694, ../sass/style.sass */
+.starSearch {
+  display: block;
+  margin: 0 0 40px 0;
+}
+/* line 697, ../sass/style.sass */
+.starSearch .nav-search {
+  left: 0;
+}
+/* line 699, ../sass/style.sass */
+.starSearch .nav-search-input {
+  display: block;
+}
+
+/* line 702, ../sass/style.sass */
+.checkboxStyle .checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 706, ../sass/style.sass */
+.profileInfo .field {
+  margin: 10px auto;
+}
+/* line 708, ../sass/style.sass */
+.profileInfo .blockTwo {
+  position: relative;
+}
+/* line 710, ../sass/style.sass */
+.profileInfo .blockTwo table.tableProfile {
+  width: 100%;
+}
+/* line 714, ../sass/style.sass */
+.profileInfo .blockTwo table.tableProfile td input:active, .profileInfo .blockTwo table.tableProfile td input:focus, .profileInfo .blockTwo table.tableProfile th input:active, .profileInfo .blockTwo table.tableProfile th input:focus {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-left: 2px solid #87B87F;
+}
+/* line 719, ../sass/style.sass */
+.profileInfo .blockTwo .blockPlus {
+  cursor: pointer;
+  margin: 0 0 10px 10px;
+}
+
+/* settingAccManage.html */
+/* line 725, ../sass/style.sass */
+.addNewStyle .addNewAcc-form {
+  width: 100px;
+  text-align: right;
+  margin: 10px 20px 15px auto;
+}
+/* line 729, ../sass/style.sass */
+.addNewStyle .modal-body {
+  text-align: left;
+}
+
+/* line 731, ../sass/style.sass */
+.deleteAddAccount {
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #ff0000;
+  line-height: 34px;
 }
 
 /*----- reservation-01.html ----- */

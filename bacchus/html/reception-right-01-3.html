@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta charset="utf-8"/>
-    <title>排房作業 / PMS系統 / 美麗信花園大酒店</title>
 
-    <meta name="description" content="overview &amp; stats"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<head id="extendFile">
+    <!--[if !IE]> -->
+    <script src="../components/jquery/dist/jquery.js"></script>
+    <!-- <![endif]-->
 
-    <!-- bootstrap & fontawesome -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../components/font-awesome/css/font-awesome.css"/>
-
-    <!-- page specific plugin styles -->
-    <link rel="stylesheet" href="../components/_mod/jquery-ui/jquery-ui.css"/>
-    <link rel="stylesheet" href="../components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css"/>
-    <link rel="stylesheet" href="../components/_mod/jqgrid/ui.jqgrid.css"/>
-
-    <link rel="stylesheet" href="../components/bootstrap-duallistbox/dist/bootstrap-duallistbox.css"/>
-    <link rel="stylesheet" href="../components/bootstrap-multiselect/dist/css/bootstrap-multiselect.css"/>
-    <link rel="stylesheet" href="../components/select2/dist/css/select2.css"/>
-
-
-    <!-- text fonts -->
-    <link rel="stylesheet" href="../assets/css/ace-fonts.css"/>
-
-    <!-- ace styles -->
-    <link rel="stylesheet" href="../assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style"/>
-
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="../assets/css/ace-part2.css" class="ace-main-stylesheet"/>
-    <![endif]-->
-    <link rel="stylesheet" href="../assets/css/ace-skins.css"/>
-    <link rel="stylesheet" href="../assets/css/ace-rtl.css"/>
-
-    <!--[if lte IE 9]>
-    <link rel="stylesheet" href="../assets/css/ace-ie.css"/>
-    <![endif]-->
-    <link rel="stylesheet" href="../assets/css/style.css"/>
-    <!-- inline styles related to this page -->
-
-    <!-- ace settings handler -->
-    <script src="../assets/js/ace-extra.js"></script>
-
-    <!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
-
-    <!--[if lte IE 8]>
-    <script src="../components/html5shiv/dist/html5shiv.min.js"></script>
-    <script src="../components/respond/dest/respond.min.js"></script>
+    <!--[if IE]>
+    <script src="../components/jquery.1x/dist/jquery.js"></script>
     <![endif]-->
 </head>
 
+<script type="text/javascript">
+    $("#extendFile").load("./common/extendFile.html", function () {
+        $("body").show();
+    });
+</script>
+
 <body class="no-skin">
+
+<script type="text/javascript">
+    $("body").hide();
+</script>
 <!-- #section:basics/navbar.layout -->
 <div id="navbar" class="navbar navbar-default          ace-save-state navbar-fixed-top">
 
@@ -112,7 +82,8 @@
         <ul class="nav nav-list">
             <li>
 						<span class="input-icon companyInfo">
-							<input type="text" placeholder="關鍵字查詢" class="nav-search-input"  autocomplete="off" style="padding: 5px 0 6px 5px; margin-bottom: 1px;" />
+							<input type="text" placeholder="關鍵字查詢" class="nav-search-input" autocomplete="off"
+                                   style="padding: 5px 0 6px 5px; margin-bottom: 1px;"/>
 						</span>
                 <i class="ace-icon fa fa-search nav-search-icon"></i>
             </li>
@@ -262,7 +233,6 @@
 
                 </ul>
             </li>
-
 
 
             <li class="">
@@ -496,7 +466,6 @@
             </li>
 
 
-
         </ul><!-- /.nav-list -->
 
         <!-- #section:basics/sidebar.layout.minimize -->
@@ -519,7 +488,7 @@
                 <!--<div class="top-ul" style="position: fixed; right: 0; left: 200px; top: auto; z-index: 1024;">-->
                 <div class="top-ul">
                     <ul>
-                        <a href="indexMain.html">
+                        <a href="manageReservation.html">
                             <li> 訂房</li>
                         </a>
                         <a href="reception.html" class="active-01">
@@ -553,15 +522,33 @@
 
                 <div class="secondMenu-ul">
                     <ul>
-                        <a href="reception.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>依房型訂房</li></a>
-                        <a href="reception-02-2.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>綜合櫃台</li></a>
-                        <a href="reception-02-3.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>住客查詢</li></a>
-                        <a href="reception-02-4.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>訂房查詢</li></a>
-                        <a href="reception-02-5.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>C/I清單</li></a>
-                        <a href="reception-02-6.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>CO清單</li></a>
-                        <a href="reception-02-7.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>排房作業</li></a>
-                        <a href="reception-02-8.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>團體管理</li></a>
-                        <a href="reception-02-9.html"><li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>交辦事項</li></a>
+                        <a href="reception.html">
+                            <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>依房型訂房</li>
+                        </a>
+                        <a href="reception-02-2.html">
+                            <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>綜合櫃台</li>
+                        </a>
+                        <a href="reception-02-3.html">
+                            <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>住客查詢</li>
+                        </a>
+                        <a href="reception-02-4.html">
+                            <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>訂房查詢</li>
+                        </a>
+                        <a href="reception-02-5.html">
+                            <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>C/I清單</li>
+                        </a>
+                        <a href="reception-02-6.html">
+                            <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>CO清單</li>
+                        </a>
+                        <a href="reception-02-7.html">
+                            <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>排房作業</li>
+                        </a>
+                        <a href="reception-02-8.html">
+                            <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>團體管理</li>
+                        </a>
+                        <a href="reception-02-9.html">
+                            <li><img src="../assets/images/icon/bed.png " class="icon-2-style"/>交辦事項</li>
+                        </a>
                     </ul>
                 </div>
                 <!-- /.secondMenu-ul -->
@@ -613,7 +600,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="search-co-content col-xs-12 rece-search-detail" style="display: none;">
+                                        <div class="search-co-content col-xs-12 rece-search-detail"
+                                             style="display: none;">
                                             <div class="">
                                                 <div class="col-sm-4">
                                                     <div class="block-table">
@@ -5290,58 +5278,6 @@
 
 <!-- basic scripts -->
 
-<!--[if !IE]> -->
-<script src="../components/jquery/dist/jquery.js"></script>
-
-<!-- <![endif]-->
-
-<!--[if IE]>
-<script src="../components/jquery.1x/dist/jquery.js"></script>
-<![endif]-->
-<!--myself affects 自己加的效果-->
-<script src="../assets/js/site.js"></script>
-<script src="../assets/js/include.js"></script>
-
-<script type="text/javascript">
-    if ('ontouchstart' in document.documentElement) document.write("<script src='../components/_mod/jquery.mobile.custom/jquery.mobile.custom.js'>" + "<" + "/script>");
-</script>
-<script src="../components/bootstrap/dist/js/bootstrap.js"></script>
-
-<!-- page specific plugin scripts -->
-<script src="../components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
-<script src="../components/jqGrid/js/jquery.jqGrid.js"></script>
-<script src="../components/jqGrid/js/i18n/grid.locale-en.js"></script>
-
-<script src="../components/_mod/bootstrap-duallistbox/jquery.bootstrap-duallistbox.js"></script>
-<script src="../components/raty/lib/jquery.raty.js"></script>
-<script src="../components/_mod/bootstrap-multiselect/bootstrap-multiselect.js"></script>
-<script src="../components/select2/dist/js/select2.js"></script>
-
-<!-- ace scripts -->
-<script src="../assets/js/src/elements.scroller.js"></script>
-<script src="../assets/js/src/elements.colorpicker.js"></script>
-<script src="../assets/js/src/elements.fileinput.js"></script>
-<script src="../assets/js/src/elements.typeahead.js"></script>
-<script src="../assets/js/src/elements.wysiwyg.js"></script>
-<script src="../assets/js/src/elements.spinner.js"></script>
-<script src="../assets/js/src/elements.treeview.js"></script>
-<script src="../assets/js/src/elements.wizard.js"></script>
-<script src="../assets/js/src/elements.aside.js"></script>
-<script src="../assets/js/src/ace.js"></script>
-<script src="../assets/js/src/ace.basics.js"></script>
-<script src="../assets/js/src/ace.scrolltop.js"></script>
-<script src="../assets/js/src/ace.ajax-content.js"></script>
-<script src="../assets/js/src/ace.touch-drag.js"></script>
-<script src="../assets/js/src/ace.sidebar.js"></script>
-<script src="../assets/js/src/ace.sidebar-scroll-1.js"></script>
-<script src="../assets/js/src/ace.submenu-hover.js"></script>
-<script src="../assets/js/src/ace.widget-box.js"></script>
-<script src="../assets/js/src/ace.settings.js"></script>
-<script src="../assets/js/src/ace.settings-rtl.js"></script>
-<script src="../assets/js/src/ace.settings-skin.js"></script>
-<script src="../assets/js/src/ace.widget-on-reload.js"></script>
-<script src="../assets/js/src/ace.searchbox-autocomplete.js"></script>
-
 <!-- inline scripts related to this page -->
 
 <script type="text/javascript">
@@ -5866,7 +5802,7 @@
     //        document.getElementById(box).style.display = vis;
     //    }
 
-//顯示訂房卡明細
+    //顯示訂房卡明細
     $(document).ready(function () {
         $('.showCardDetail').click(function () {
             if ($(this).attr("value") == "showCardDetail") {
@@ -5885,85 +5821,85 @@
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 },
                 {
                     id: "00385301", name: "1", note: "0", stock: "3", ship: "0", sdate: "桃花源",
                     availMum: "2016/05/07", ciNum: "2016/05/08", coNum: "1", group: "KA101:2016早鳥專案",
                     ciDate: "STD:標準雙人客", coDate: "STD:標準雙人客", day: "3,000", room: "一般散客",
-                    price : "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
+                    price: "桃花源", useRoom: "一般散客", averPrice: "桃花源", adult: "2", kid: "0", baby: "0"
                 }
 
             ];
@@ -6052,7 +5988,7 @@
             data: townHouse_data,
             datatype: "local",
             height: 300,
-            colNames: ['訂房卡號', '序號', '房組', '姓名', '排房', '房號', '排房房種','使用房種', '計價房種', '排房設定', 'C/I日期', 'C/O日期', '天數', '代訂公司', '房價代號','大人', '小孩', '嬰兒', '平均房價', '排房備註'],
+            colNames: ['訂房卡號', '序號', '房組', '姓名', '排房', '房號', '排房房種', '使用房種', '計價房種', '排房設定', 'C/I日期', 'C/O日期', '天數', '代訂公司', '房價代號', '大人', '小孩', '嬰兒', '平均房價', '排房備註'],
             colModel: [
 //						{name:'myac',index:'', width:80, fixed:true, sortable:false, resize:false,
 //							formatter:'actions',
@@ -6857,19 +6793,6 @@
 
     });
 </script>
-<!-- the following scripts are used in demo only for onpage help and you don't need them -->
-<link rel="stylesheet" href="../assets/css/ace.onpage-help.css"/>
-<link rel="stylesheet" href="../docs/assets/js/themes/sunburst.css"/>
-
-<script type="text/javascript"> ace.vars['base'] = '..'; </script>
-<script src="../assets/js/src/elements.onpage-help.js"></script>
-<script src="../assets/js/src/ace.onpage-help.js"></script>
-<script src="../docs/assets/js/rainbow.js"></script>
-<script src="../docs/assets/js/language/generic.js"></script>
-<script src="../docs/assets/js/language/html.js"></script>
-<script src="../docs/assets/js/language/css.js"></script>
-<script src="../docs/assets/js/language/javascript.js"></script>
-
 
 </body>
 </html>
