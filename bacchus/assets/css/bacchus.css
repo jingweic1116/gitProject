@@ -3,67 +3,28 @@ body{
 	font-family:'微軟正黑體' ;
 }
 
-.inlineBlock{
-	display:inline-block;
-}
-
-.valignTop{
-	vertical-align: top;
-}
-
-
-.center{
-	text-align:center;
-}
+.inlineBlock{display:inline-block;}
+.valignTop{vertical-align: top;}
+.center{text-align:center;}
 .noPadding{padding:0;}
-.noPadding-2side{
-	padding-left:0;
-	padding-right:0;
-}
-.noPaddingLeft{
-	padding-left:0;
-}
-.noPaddingRight{
-	padding-right:0;
-}
-
-.padding10{
-	padding:10px;
-}
-.marginTop5{
-	margin-top: 5px;
-}
-.marginTop10{
-	margin-top: 10px;
-}
-
-.marginTop20{
-	margin-top: 20px;
-}
-
-.marginBottom{
-	margin-bottom: 10px;
-}
-.marginBottom30{
-	margin-bottom:30px;
-}
-.marginBottom100{
-	margin-bottom:100px;
-}
-
-
-.floatright{
-	float:right;
-}
-.lineheight-15{
-	line-height: 1.5em;
-}
+.noPadding-2side{padding-left:0;padding-right:0;}
+.noPaddingLeft{padding-left:0;}
+.noPaddingRight{padding-right:0;}
+.padding10{padding:10px;}
+.paddingleft5{ padding-left:5px; }
+.marginTop5{margin-top: 5px;}
+.marginTop10{margin-top: 10px;}
+.marginTop20{margin-top: 20px;}
+.marginBottom{margin-bottom: 10px;}
+.marginBottom30{margin-bottom:30px;}
+.marginBottom100{margin-bottom:100px;}
+.floatright{float:right;}
+.lineheight-15{line-height: 1.5em;}
 .height150{height:150px;}
-.height300{
-	height:300px;
-}
+.height300{height:300px;}
 
 .btn90px{width:90px;}
+.btn110px{width:110px;}
 .btn100p{width:100%;}
 .btn22p{width:22%;}
 .width1{width:1%;}
@@ -129,6 +90,40 @@ body{
 .width98{width:98%;}
 .width99{width:99%;}
 .width100{width:100%;}
+
+
+.col-5p,.col-8p,.col-10p,.col-12p,.col-15p,.col-20p,.col-22p,
+.col-25p,.col-30p,.col-35p,.col-40p,.col-50p,
+.col-60p,.col-65p,.col-63p,.col-75p,.col-80p,
+.col-85p,.col-90p,.col-100p{
+  position: relative;
+  float:left;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.col-5p{width:5%;}
+.col-8p{width:8%;}
+.col-12p{width:12%;}
+.col-10p{width:10%;}
+.col-15p{width:15%;}
+.col-20p{width:20%;}
+.col-22p{width:22%;}
+.col-25p{width:25%;}
+.col-30p{width:30%;}
+.col-35p{width:35%;}
+.col-40p{width:40%;}
+.col-50p{width:50%;}
+.col-60p{width:60%;}
+.col-63p{width:63%;}
+.col-65p{width:65%;}
+.col-75p{width:75%;}
+.col-80p{width:80%;}
+.col-85p{width:85%;}
+.col-90p{width:90%;}
+.col-100p{width:100%;}  
+
+
 
 input{
   color: #858585;
@@ -318,10 +313,9 @@ select {
 }
 
 
-
 .form-control{
-	padding:0px;
-	height:auto;
+	/*padding:0px;
+	height:auto;*/
 	display: inline-block;
 }
 
@@ -571,4 +565,41 @@ select {
 	border-radius:5px;
 	padding:10%;
 	margin-bottom:5px;
+}
+
+
+/*綜合入帳:Walk in*/
+
+.modal-walkin-top{
+	padding-left:0px;
+	padding-right:0px;
+	padding-bottom:15px; 
+}
+
+.walkin-service-title{
+  position: relative;
+  float:left;
+  min-height: 1px;
+  padding-left:5px;
+  margin-bottom:15px;
+  width:70%;
+}
+
+
+.walkin-note-textarea{
+  position: relative;
+  float:left;
+  min-height: 1px;
+  padding-left:2px;
+  width:70%;
+}
+
+.modal-walkin-middle{
+	padding-top:15px;
+	padding-bottom:15px; 
+}
+.modal-walkin-button{
+	padding-bottom:15px; 
+	margin:25px auto;
+	text-align: center;
 }
