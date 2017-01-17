@@ -4334,10 +4334,10 @@
                                 <a href="#" id="intCounter-btn-modal-02"  class="btn btn-primary btn-defaultWidth" role="button">Walk in</a>
                             </li>
                             <li>
-                                <a href="#intCounter-btn-modal-03" data-toggle="modal"  class="btn btn-primary btn-defaultWidth" role="button">修改CO日期</a>
+                                <a href="#" id="intCounter-btn-modal-03"  class="btn btn-primary btn-defaultWidth" role="button">修改CO日期</a>
                             </li>
                             <li>
-                                <a href="#intCounter-btn-modal-04" data-toggle="modal"  class="btn btn-primary btn-defaultWidth" role="button">換房</a>
+                                <a href="#" id="intCounter-btn-modal-04"  class="btn btn-primary btn-defaultWidth" role="button">換房</a>
                             </li>
                             <li>
                                 <a href="#intCounter-btn-modal-05" data-toggle="modal"  class="btn btn-primary btn-defaultWidth" role="button">休息</a>
@@ -4754,65 +4754,80 @@
 <!-- /.Walk in END  -->
 
 <!--修改CO日期　pop intCounter-btn-modal-03-->
-<div id="intCounter-btn-modal-03" class="modal fade" tabindex="-1">
-
-
-    <div class="modal-dialog modal-dialog-fullScreen-blockSet" style="max-width: 100%; ">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                        aria-hidden="true">&times;</button>
-                <h3 class="smaller lighter no-margin" style="text-align: left;">修改CO日期</h3>
+<div id="intCounter-btn-modal-03-message" class="hide">
+    <div class="modal-co-top">
+        <div class="col-sm-10 col-md-10 col-lg-10 center" >
+            <div>CO日期</div>
+            <div>
+                <select class="form-control width30">
+                    <option></option>
+                </select>
             </div>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 cibtn">
+            <button class="btn btn100p">確定</button>
+            <button class="btn btn100p">離開</button>
+        </div>
+    </div>
 
-            <div class="modal-body">
-<!--                 <div class="col-sm-10 col-md-10 col-lg-10"></div>
-                <div class="col-sm-2 col-md-2 col-lg-2">
-                    <button class="btn">確定</button>
-                    <button class="btn">離開</button>
-                </div>
-                <div class="col-sm-10 col-md-10 col-lg-10"></div>
-                <div class="col-sm-2 col-md-2 col-lg-2">
-                    <button class="btn">RM:613</button>
-                    <button class="btn">全選</button>
-                    <button class="btn">全不選</button>
-                    <button class="btn"></button>
-                    <button class="btn"></button>
-                    <button class="btn">離開</button>                        
-                </div> -->
-
-            
-                <a href="#" data-toggle="modal">
-                    <img src="../assets/images/popPage/int_CounterPop/IC_03.JPG" style="max-width: 100%;"/>
-                </a>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog  -->
+      <div class="">
+        <div class="col-sm-10 col-md-10 col-lg-10">
+            <table class="table  table-bordered table-hover">
+                <thead>
+                    <tr>
+                         <td>選擇 </td>
+                         <td>房號</td>
+                         <td>序號</td>
+                         <td>Full Name</td>
+                         <td>C/I日期</td>
+                         <td>預計C/O日</td>
+                         <td>訂房卡號</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                        <input type="checkbox">
+                        </td>
+                        <td>313</td>
+                        <td>1</td>
+                        <td>桃花源_3</td>
+                        <td>2016/05/06</td>
+                        <td>2016/05/09</td>
+                        <td>00385201</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2 cibtn">
+        <button class="btn btn100p">RM:613</button>
+        <button class="btn btn100p">全選</button>
+        <button class="btn btn100p">全不選</button>
+        <button class="btn btn100p">反向選擇</button>
+        <button class="btn btn100p">以下全選</button>
+        <button class="btn btn100p">以下全不選</button>
+    </div>
 </div>
 <!-- /.修改CO日期 END  -->
 
 <!--換房 pop　intCounter-btn-modal-04 -->
-<div id="intCounter-btn-modal-04" class="modal fade" tabindex="-1">
-    <div class="modal-dialog modal-dialog-fullScreen-blockSet" style="max-width: 100%; ">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                        aria-hidden="true">&times;</button>
-                <h3 class="smaller lighter no-margin" style="text-align: left;">換房</h3>
-            </div>
-
-            <div class="modal-body">
-                <a href="#" data-toggle="modal">
-                    <img src="../assets/images/popPage/int_CounterPop/IC_04.JPG" style="max-width: 100%;"/>
-                </a>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog  -->
+<div id="intCounter-btn-modal-04-message" class="hide">
+    <div class="modal-room-change">
+        <div class="inlineBlock">新房號:</div>
+        <div class="inlineBlock">
+            <input type="" name="" class="form-control">
+        </div>
+    </div>
+    <div class="modal-room-change"">
+        <button class="btn btn-primary">確定</button>
+        <button class="btn">取消</button>
+    </div>
 </div>
 <!-- /.換房 END  -->
 
 <!--休息　pop intCounter-btn-modal-05-->
-<div id="intCounter-btn-modal-05" class="modal fade" tabindex="-1">
+<div id="intCounter-btn-modal-05-message" class="hide">
     <div class="modal-dialog modal-dialog-fullScreen-blockSet" style="max-width: 100%; ">
         <div class="modal-content">
             <div class="modal-header">
@@ -4832,7 +4847,7 @@
 <!-- /.休息 END  -->
 
 <!--加房　pop intCounter-btn-modal-06-->
-<div id="intCounter-btn-modal-06" class="modal fade" tabindex="-1">
+<div id="intCounter-btn-modal-06-message" class="hide">
     <div class="modal-dialog modal-dialog-fullScreen-blockSet" style="max-width: 100%; ">
         <div class="modal-content">
             <div class="modal-header">
@@ -5294,6 +5309,62 @@
                 ]
             });
         });
+
+         // 彈出intCounter-btn-modal-03
+        $("#intCounter-btn-modal-03").on('click', function (e) {
+            e.preventDefault();
+            var dialog = $("#intCounter-btn-modal-03-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>修改CO日期</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+                buttons: [
+                    {
+                        text: "Cancel",
+                        "class": "btn btn-minier",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    },
+                    {
+                        text: "OK",
+                        "class": "btn btn-primary btn-minier",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    }
+                ]
+            });
+        }); 
+
+         // 彈出intCounter-btn-modal-04
+        $("#intCounter-btn-modal-04").on('click', function (e) {
+            e.preventDefault();
+            var dialog = $("#intCounter-btn-modal-04-message").removeClass('hide').dialog({
+                modal: true,
+                title: "<div class='widget-header widget-header-small'><h4 class='smaller'>換房</h4></div>",
+                title_html: true,
+                width: 1000,
+                maxwidth: 1920,
+                buttons: [
+                    {
+                        text: "Cancel",
+                        "class": "btn btn-minier",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    },
+                    {
+                        text: "OK",
+                        "class": "btn btn-primary btn-minier",
+                        click: function () {
+                            $(this).dialog("close");
+                        }
+                    }
+                ]
+            });
+        });                
     });
 </script>
 
