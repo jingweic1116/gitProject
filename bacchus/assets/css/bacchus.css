@@ -6,6 +6,7 @@ body{
 .inlineBlock{display:inline-block;}
 .valignTop{vertical-align: top;}
 .center{text-align:center;}
+.text-right{text-align: right;}
 .noPadding{padding:0;}
 .noPadding-2side{padding-left:0;padding-right:0;}
 .noPaddingLeft{padding-left:0;}
@@ -93,8 +94,8 @@ body{
 
 
 .col-5p,.col-8p,.col-10p,.col-12p,.col-15p,.col-20p,.col-22p,
-.col-25p,.col-30p,.col-35p,.col-40p,.col-50p,
-.col-60p,.col-65p,.col-63p,.col-75p,.col-80p,
+.col-25p,.col-28p,.col-30p,.col-35p,.col-40p,.col-50p,
+.col-60p,.col-65p,.col-63p,.col-75p,.col-80p,.col-88p,
 .col-85p,.col-90p,.col-100p{
   position: relative;
   float:left;
@@ -110,6 +111,7 @@ body{
 .col-20p{width:20%;}
 .col-22p{width:22%;}
 .col-25p{width:25%;}
+.col-28p{width:28%;}
 .col-30p{width:30%;}
 .col-35p{width:35%;}
 .col-40p{width:40%;}
@@ -119,6 +121,7 @@ body{
 .col-65p{width:65%;}
 .col-75p{width:75%;}
 .col-80p{width:80%;}
+.col-88p{width:88%;}
 .col-85p{width:85%;}
 .col-90p{width:90%;}
 .col-100p{width:100%;}  
@@ -618,3 +621,15 @@ select {
 	margin-left:25%; 
 
 }
+
+/*休息*/
+.modal-rest-button{
+	margin-bottom:15px;
+	margin-top:25px; 
+}
+.btn-exit{margin-left:175px !important;}
+
+
+/*加房*/
+
+.btn-addroom{margin-left:280px !important;}
